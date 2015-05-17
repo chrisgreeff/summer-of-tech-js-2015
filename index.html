@@ -219,7 +219,7 @@ var myNum = 32;
 
 var myStr = 'Puppies!';
 
-var no = false;
+var myBool = false;
 </code></pre>
                         <aside class="notes">Before I move onto move details about the types, I should mention that JavaScript is a loosely typed language. So unlike Java or C, you don't have to be explicit in the type of variable you are declaring. You can just use the keyword `var`, and JavaScript will work out what you're talking about.</aside>
                     </section>
@@ -229,59 +229,285 @@ var no = false;
                     <section data-transition="none">
                         <h2>Numbers</h2>
 <pre><code data-trim>
-3 * 4
+var x = 6;
+var y = 3;
+
+x * y;
+x / y;
+x - y;
+x + y;
 </code></pre>
-<span class="fragment">12</span>
                     </section>
 
                     <section data-transition="none">
                         <h2>Numbers</h2>
 <pre><code data-trim>
-72 / 8
+var x = 6;
+var y = 3;
+
+x * y; // 18
+x / y; // 2
+x - y; // 3
+x + y; // 9
 </code></pre>
-<span class="fragment">8</span>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Numbers</h2>
+<pre><code data-trim>
+var x = 0.1;
+var y = 0.2;
+
+x + y;
+</code></pre>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Numbers</h2>
+<pre><code data-trim>
+var x = 0.1;
+var y = 0.2;
+
+x + y; // 0.30000000000000004
+</code></pre>
+                    </section>
+
+                    <section data-background="./images/gifs/confused.gif">
+                        <p><code>0.1 + 0.2 = 0.30000000000000004</code></p>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Precision Problems</h2>
+<pre><code data-trim>
+var z = 0.355;
+
+z.toFixed(2); //
+</code></pre>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Precision Problems</h2>
+<pre><code data-trim>
+var z = 0.355;
+
+z.toFixed(2); // '0.35'
+</code></pre>
+                    </section>
+
+                    <section data-background="./images/gifs/angry.gif">
+                        <h2>WHERE'S MA MONEY!?</h2>
                     </section>
 
                     <!-- Strings -->
 
-                    <section>
+                    <section data-transition="none">
                         <h2>Strings</h2>
 <pre><code data-trim>
-'hello'
+var str1 = 'Hello';
+var str2 = ' World!';
+
+str1 + str2;
 </code></pre>
-<span class="fragment">12</span>
                     </section>
 
                     <section data-transition="none">
                         <h2>Strings</h2>
 <pre><code data-trim>
-72 / 8
+var str1 = 'Hello';
+var str2 = ' World!';
+
+str1 + str2; // 'Hello World!'
 </code></pre>
-<span class="fragment">8</span>
                     </section>
 
-                    <section>
+                    <section data-transition="none">
+                        <h2>Strings</h2>
+<pre><code data-trim>
+var x = 6;
+var y = '3';
+
+x * y;
+x / y;
+x - y;
+x + y;
+</code></pre>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Strings</h2>
+<pre><code data-trim>
+var x = 6;
+var y = '3';
+
+x * y; // 18
+x / y; // 2
+x - y; // 3
+x + y; // '63'
+</code></pre>
+                    </section>
+
+                    <section data-background="./images/gifs/confused2.gif">
+                        <p><code>6 + '3' = '63'</code></p>
+                    </section>
+
+                    <!-- Functions -->
+
+                    <section data-transition="none">
+                        <h2>Functions</h2>
+<pre><code data-trim>
+function dance() {
+  console.log('Boogie boogie!');
+}
+
+var double function(x) {
+  return x * 2;
+}
+
+dance(); // 'Boogie boogie!'
+double(16); // 32
+</code></pre>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Functions</h2>
+<pre><code data-trim>
+var a = 'old value';
+
+function changeValueOfA() {
+  a = 'new value';
+  return;
+
+  function a() {};
+}
+
+changeValueOfA();
+</code></pre>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Functions</h2>
+<pre><code data-trim>
+var a = 'old value';
+
+function changeValueOfA() {
+  function a() {};
+  a = 'new value';
+
+  return;
+}
+
+changeValueOfA();
+</code></pre>
+                    </section>
+
+                    <section data-background="./images/gifs/confused4.gif">
+                        Is this even real life?
+                    </section>
+
+                    <!-- Objects -->
+
+                    <section data-transition="none">
                         <h2>Objects</h2>
 
-                        <aside class="notes">To keep things simple, you can think of objects as basic maps of key value pairs. So for example defining myObj, with a property called. Interacting with the property is done through the dot notation</aside>
+<pre><code data-trim contenteditable>
+var obj = {};
+
+var obj = new Object();
+</code></pre>
                     </section>
 
-                    <section>
-                        <h2>NaN</h2>
+                    <section data-transition="none">
+                        <h2>Objects</h2>
+<pre><code data-trim>
+var danceBot = {
+  name: 'DanceBot',
+  'version': 5000
+};
 
-                        <aside class="notes">As a quick intro to these concepts, NaN is a mathematical concept in which rather than throwing an error when an impossible mathematical operation is performed, the result NaN is returned. So for example 2/'derp' will give the result NaN.</aside>
+danceBot.dance = function() {
+  console.log('Boogie boogie boogie, all night long!')
+};
+</code></pre>
                     </section>
 
-                    <section>
-                        <h2>Undefined</h2>
+                    <section data-transition="none">
+                        <h2>Objects</h2>
 
-                        <aside class="notes">Undefined is a little simpler to understand. It's basically any declared variable or object property that has not been assigned a value by default gets the value undefined.</aside>
+<pre><code data-trim>
+function Person(config) {
+  this.name = config.name;
+  this.age = config.age;
+  this.lovesToDance = config.lovesToDance;
+}
+
+var chris = new Person({
+  name: 'Chris',
+  age: 26,
+  lovesToDance: true
+});
+</code></pre>
                     </section>
 
-                    <section>
-                        <h2>Functions</h2>
+                    <!-- Arrays -->
 
-                        <aside class="notes">Like other language JavaScript also has the concept of functions, which you can define using the `function` keyword, and invoke with parameters using brackets.</aside>
+                    <section data-transition="none">
+                        <h2>Arrays</h2>
+
+<pre><code data-trim>
+var arr = [];
+
+var arr = new Array();
+</code></pre>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Arrays</h2>
+
+<pre><code data-trim>
+var arr = ['dog', 'cat', 'hen'];
+arr.length;
+</code></pre>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Arrays</h2>
+
+<pre><code data-trim>
+var arr = ['dog', 'cat', 'hen'];
+arr.length; // 3
+</code></pre>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Arrays</h2>
+
+<pre><code data-trim>
+var arr = ['dog', 'cat', 'hen'];
+
+arr[100] = 'mouse';
+arr.length;
+</code></pre>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Arrays</h2>
+
+<pre><code data-trim>
+var arr = ['dog', 'cat', 'hen'];
+
+arr[100] = 'mouse';
+arr.length; // 101
+</code></pre>
+                    </section>
+
+                    <section data-background="./images/gifs/confused3.gif">
+                        <p><code>'dog','cat','hen',,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,'mouse'</code></p>
+                    </section>
+
+                    <!-- QUIZ -->
+
+                    <section>
+                        <h2>Time for a quiz!</h2>
                     </section>
                 </section>
 
@@ -290,23 +516,7 @@ var no = false;
                  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
                 <section>
-                    <section>
-                        <h2>Numbers</h2>
-<pre><code data-trim>
-0.1 + 0.2
-</code></pre>
-<span class="fragment">0.30000000000000004</span>
-                    </section>
-
-                    <section>
-                        <h2>WAT? WHY?</h2>
-
-                        <p>Double-precision IEEE 64-bit format</p>
-                    </section>
-
-                    <section>
-                        <aside class="notes">However with all of these little quirks of the language, it hasn't prevented JavaScript from becoming, by far, one of the most widely used languages in the world (and also the most awesome!). I'll let Sarah tell you why.</aside>
-                    </section>
+                    <aside class="notes">However with all of these little quirks of the language, it hasn't prevented JavaScript from becoming, by far, one of the most widely used languages in the world (and also the most awesome!). I'll let Sarah tell you why.</aside>
                 </section>
 
                 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
