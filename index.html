@@ -90,19 +90,26 @@
                         <img src="./images/js.png" style="height: 300px">
                         <aside class="notes">So aside from part time modeling, me and Sarah spend our days working with HTML, CSS and JavaScript, helping Vend build beautiful web applications that retailers love to use. So we've been asked to give you guys an overview about this one, so I thought the best place to start would be the beginning</aside>
                     </section>
+
+                    <section>
+                        <img src="./images/js.png">
+                    </section>
                 </section>
 
                 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                                                             HISTORY
                  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
                 <section>
-                    <section data-background="./images/gifs/bored.gif">
-                        <aside class="notes">So first, a history lesson</aside>
+                    <section>
+                        <h2>Brendan Eich</h2>
+                        <img src="./images/gifs/brendan-eich.jpg">
+                        <aside class="notes">So first, a history lesson. JavaScript was written by this guy, Brendan Eich, and it first appeared in</aside>
                     </section>
 
                     <section>
+                        <h2>First appeared in 1995</h2>
                         <img src="./images/netscape-2-splash.png">
-                        <aside class="notes">JavaScript first appeared in 1995 with the release of NetScape 2. Back when browsers used to looks like this.</aside>
+                        <aside class="notes">1995 with the release of NetScape 2. Back when browsers used to looks like this.</aside>
                     </section>
 
                     <section>
@@ -111,8 +118,8 @@
                     </section>
 
                     <section>
-                        <h2>Time to write</h2>
-                        <table class="fragment">
+                        <h2>Time it took to complete</h2>
+                        <table>
                             <thead>
                                 <tr>
                                     <th style="text-align: center;">Language</th>
@@ -145,11 +152,11 @@
                     </section>
 
                     <section data-background="./images/gifs/crazy-typing2.gif">
-                        <aside class="notes">No idea what this guy what on, but totally legit. He wrote the first version of JavaScript in 10 days!</aside>
+                        <aside class="notes">When I first heard this, I didn't believe it, but it's totally legit! 10 days to complete. No idea what this guy was on to make that happen, but it's probably not legal.</aside>
                     </section>
 
-                    <section data-background="./images/gifs/simon-laugh2.gif" data-background-size="1000px" >
-                        <aside class="notes">As a result of being a language that was written in such a ridiculously short amount of time, JavaScript is probably the most misunderstood mainstream languages in the world. Why? Well lets take a look at the language itself!</aside>
+                    <section data-background="./images/gifs/simon-laugh3.gif" data-background-size="1000px" >
+                        <aside class="notes">As a result of being a language that was written in such a ridiculously short amount of time, there are a few quirks with the language, making it probably the most misunderstood mainstream languages in the world. Why? Well lets take a look at the language itself!</aside>
                     </section>
                 </section>
 
@@ -206,6 +213,10 @@
                                     <td style="text-align: center;">Undefined</td>
                                     <td style="text-align: center;"><code>undefined</code></td>
                                 </tr>
+                                <tr>
+                                    <td style="text-align: center;">Not a Number</td>
+                                    <td style="text-align: center;"><code>NaN</code></td>
+                                </tr>
                             </tbody>
                         </table>
 
@@ -214,7 +225,7 @@
 
                     <section>
                         <h2>Loosely Typed</h2>
-<pre><code data-trim>
+<pre><code data-trim contenteditable>
 var myNum = 32;
 
 var myStr = 'Puppies!';
@@ -223,9 +234,10 @@ var myBool = false;
 </code></pre>
                         <aside class="notes">Before I move onto move details about the types, I should mention that JavaScript is a loosely typed language. So unlike Java or C, you don't have to be explicit in the type of variable you are declaring. You can just use the keyword `var`, and JavaScript will work out what you're talking about.</aside>
                     </section>
+                </section>
 
-                    <!-- Numbers -->
-
+                <!-- Numbers -->
+                <section>
                     <section data-transition="none">
                         <h2>Numbers</h2>
 <pre><code data-trim>
@@ -237,6 +249,8 @@ x / y;
 x - y;
 x + y;
 </code></pre>
+
+                        <aside class="notes">Ok lets start with numbers. Here we are defining two integers 6 and 3, and performing some basic operations on them.</aside>
                     </section>
 
                     <section data-transition="none">
@@ -250,6 +264,7 @@ x / y; // 2
 x - y; // 3
 x + y; // 9
 </code></pre>
+                        <aside class="notes">This gives us results just as you'd expect.</aside>
                     </section>
 
                     <section data-transition="none">
@@ -260,6 +275,7 @@ var y = 0.2;
 
 x + y;
 </code></pre>
+                        <aside class="notes">How about decimal values? Can you tell me what you should get here?</aside>
                     </section>
 
                     <section data-transition="none">
@@ -270,36 +286,44 @@ var y = 0.2;
 
 x + y; // 0.30000000000000004
 </code></pre>
+                        <aside class="notes">Nope! Why is this happening?</aside>
                     </section>
 
                     <section data-background="./images/gifs/confused.gif">
                         <p><code>0.1 + 0.2 = 0.30000000000000004</code></p>
+
+                        <aside class="notes">The reason for this, is JavaScript only has 1 number type, and that's double-precision 64-bit. Meaning it is crap at precision.</aside>
                     </section>
 
                     <section data-transition="none">
                         <h2>Precision Problems</h2>
 <pre><code data-trim>
-var z = 0.355;
+var z = 5.525;
 
 z.toFixed(2); //
 </code></pre>
+                        <aside class="notes">This is a real problem that me and Sarah have had to solve in Vend! Lets say for instance, we have a point of sale system, and you're dealing with cents. So lets take a look at this example. `toFixed` is a function you can call on a number to round the value to the number of decimal places specified. So what would you expect this to give?</aside>
                     </section>
 
                     <section data-transition="none">
                         <h2>Precision Problems</h2>
 <pre><code data-trim>
-var z = 0.355;
+var z = 5.525;
 
-z.toFixed(2); // '0.35'
+z.toFixed(2); // '5.52'
 </code></pre>
+                        <aside class="notes">That's not what we get. And as surprising as it's sounds, when retailers find out you've been short changing them 1c</aside>
                     </section>
 
                     <section data-background="./images/gifs/angry.gif">
                         <h2>WHERE'S MA MONEY!?</h2>
+
+                        <aside class="notes">They are not happy.</aside>
                     </section>
+                </section>
 
-                    <!-- Strings -->
-
+                <!-- Strings -->
+                <section>
                     <section data-transition="none">
                         <h2>Strings</h2>
 <pre><code data-trim>
@@ -307,7 +331,11 @@ var str1 = 'Hello';
 var str2 = ' World!';
 
 str1 + str2;
+str1.length;
+str1.substring(0, 2);
 </code></pre>
+
+                    <aside class="notes">OK lets take a look at strings. So here we have two strings declared, and we can perform some operations on them, like concatenation, find the length, or extract a substring within another string.</aside>
                     </section>
 
                     <section data-transition="none">
@@ -317,7 +345,11 @@ var str1 = 'Hello';
 var str2 = ' World!';
 
 str1 + str2; // 'Hello World!'
+str1.length; // 5
+str2.substring(1, 4); // 'Wol'
 </code></pre>
+
+                    <aside class="notes">Giving us just as you'd expect "Hello World!", 5 for the length, and "Wol" when sub-stringing</aside>
                     </section>
 
                     <section data-transition="none">
@@ -331,6 +363,8 @@ x / y;
 x - y;
 x + y;
 </code></pre>
+
+                        <aside class="notes">In addition JavaScript smart! It can figure out what you're trying do some of the time. Take these examples, when trying to perform mathematical operations between numbers and strings. As you'd expect, we would get all the same results as we did previously</aside>
                     </section>
 
                     <section data-transition="none">
@@ -344,14 +378,18 @@ x / y; // 2
 x - y; // 3
 x + y; // '63'
 </code></pre>
+                        <aside class="notes">Except for the last one...</aside>
                     </section>
 
                     <section data-background="./images/gifs/confused2.gif">
                         <p><code>6 + '3' = '63'</code></p>
+
+                        <aside class="notes">Why is that? The reason is, Concatenation will always take precedence when performing addition, and there is a string involved. Always.</aside>
                     </section>
+                </section>
 
-                    <!-- Functions -->
-
+                <!-- Functions -->
+                <section>
                     <section data-transition="none">
                         <h2>Functions</h2>
 <pre><code data-trim>
@@ -403,9 +441,10 @@ changeValueOfA();
                     <section data-background="./images/gifs/confused4.gif">
                         Is this even real life?
                     </section>
+                </section>
 
-                    <!-- Objects -->
-
+                <!-- Objects -->
+                <section>
                     <section data-transition="none">
                         <h2>Objects</h2>
 
@@ -447,9 +486,10 @@ var chris = new Person({
 });
 </code></pre>
                     </section>
+                </section>
 
-                    <!-- Arrays -->
-
+                <!-- Arrays -->
+                <section>
                     <section data-transition="none">
                         <h2>Arrays</h2>
 
@@ -503,17 +543,7 @@ arr.length; // 101
                     <section data-background="./images/gifs/confused3.gif">
                         <p><code>'dog','cat','hen',,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,'mouse'</code></p>
                     </section>
-
-                    <!-- QUIZ -->
-
-                    <section>
-                        <h2>Time for a quiz!</h2>
-                    </section>
                 </section>
-
-                <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                                                            QUIRKS
-                 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
                 <section>
                     <aside class="notes">However with all of these little quirks of the language, it hasn't prevented JavaScript from becoming, by far, one of the most widely used languages in the world (and also the most awesome!). I'll let Sarah tell you why.</aside>
