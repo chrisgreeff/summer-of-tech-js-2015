@@ -15,7 +15,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
         <link rel="stylesheet" href="css/reveal.css">
-        <link rel="stylesheet" href="css/theme/black.css" id="theme">
+        <link rel="stylesheet" href="css/theme/league.css" id="theme">
 
         <!-- Code syntax highlighting -->
         <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -65,25 +65,59 @@
                                                             HISTORY
                  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
                 <section>
-                    <h2>First, A history lesson</h2>
-                    <p>Add history gif</p>
-                    <aside class="notes">So first, a history lesson</aside>
-
-                    <section>
-                        <p>Add Net scape images</p>
-
-                        <aside class="notes">JavaScript first appeared in 1995 with the release of NetScape 2. Back when browsers used to looks like this. Any of you guys remember when your browsers looked like this? Were any of you alive? I can still remember clearly, the whole family crowding around the computer, and being amazed at how fast the progress bar at the bottom used to move.</aside>
+                    <section data-background="./images/gifs/bored.gif">
+                        <aside class="notes">So first, a history lesson</aside>
                     </section>
 
                     <section>
-                        <p>*Java: 4 years, Python: 2 year, C++: 6 year*.</p>
-                        <p>10 days</p>
+                        <img src="./images/netscape-2-splash.png">
+                        <aside class="notes">JavaScript first appeared in 1995 with the release of NetScape 2. Back when browsers used to looks like this.</aside>
+                    </section>
+
+                    <section>
+                        <img src="./images/netscape-2.png">
+                         <aside class="notes">Any of you guys remember when your browsers looked like this? Were any of you alive? I can still remember clearly, the whole family crowding around the computer, and being amazed at how fast the progress bar at the bottom used to move.</aside>
+                    </section>
+
+                    <section>
+                        <h2>Time to write</h2>
+                        <table class="fragment">
+                            <thead>
+                                <tr>
+                                    <th style="text-align: center;">Language</th>
+                                    <th style="text-align: center;">Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="text-align: center;">Java</td>
+                                    <td style="text-align: center;">4 years</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">Python</td>
+                                    <td style="text-align: center;">2 years</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">C++</td>
+                                    <td style="text-align: center;">6 years</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">JavaScript</td>
+                                    <td style="text-align: center;"><strong class="fragment" style="color: #CA5959;">10 days</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
                         <aside class="notes">
                             Anyway, so first appeared in 1995. Anyone want to hazard a guess as to how long it took to implement? Here's a bit of help. JavaScript took 10 days to complete.
                         </aside>
                     </section>
 
-                    <section>
+                    <section data-background="./images/gifs/crazy-typing2.gif">
+                        <aside class="notes">No idea what this guy what on, but totally legit. He wrote the first version of JavaScript in 10 days!</aside>
+                    </section>
+
+                    <section data-background="./images/gifs/simon-laugh2.gif" data-background-size="1000px" >
                         <aside class="notes">As a result of being a language that was written in such a ridiculously short amount of time, JavaScript is probably the most misunderstood mainstream languages in the world. Why? Well lets take a look at the language itself!</aside>
                     </section>
                 </section>
@@ -93,20 +127,106 @@
                  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
                 <section>
-                    <h2>The Language</h2>
-
-                    <aside class="notes">Now before I start, are there any here that has some JavaScript experience? If you have, you probably know some if this already, so I'd ask you, if you know the answers to give the others here a fighting chance.</aside>
-
                     <section>
-                        <h2>Loosely Typed</h2>
+                        <h2>The Language</h2>
 
-                        <aside class="notes">JavaScript is a loosely typed language, so unlike Java or C, you don't have to be explicit in the type of variable you are declaring. You can just use the keyword `var`, and JavaScript will work out what you're talking about.</aside>
+                        <aside class="notes">Now before I start, are there any here that has some JavaScript experience? If you have, you probably know some if this already, so I'd ask you, if you know the answers to give the others here a fighting chance.</aside>
                     </section>
-
                     <section>
                         <h2>Types</h2>
 
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="text-align: center;">Type</th>
+                                    <th style="text-align: center;">Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="text-align: center;">Number</td>
+                                    <td style="text-align: center;"><code>3</code></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">String</td>
+                                    <td style="text-align: center;"><code>'swagger'</code></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">Boolean</td>
+                                    <td style="text-align: center;"><code>true</code></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">Object</td>
+                                    <td style="text-align: center;"><code>{ name: 'Bond' }</code></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">Array</td>
+                                    <td style="text-align: center;"><code>[1, 2, 3]</code></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">Function</td>
+                                    <td style="text-align: center;"><code>function dance() {}</code></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">Null</td>
+                                    <td style="text-align: center;"><code>null</code></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">Undefined</td>
+                                    <td style="text-align: center;"><code>undefined</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
                         <aside class="notes">So like any language there are a number of different types in JavaScript. You're probably familiar with most of these, except for maybe NaN and undefined. I won't go through all of these in detail, but just to give you a quick overview if you aren't already familiar</aside>
+                    </section>
+
+                    <section>
+                        <h2>Loosely Typed</h2>
+<pre><code data-trim>
+var myNum = 32;
+
+var myStr = 'Puppies!';
+
+var no = false;
+</code></pre>
+                        <aside class="notes">Before I move onto move details about the types, I should mention that JavaScript is a loosely typed language. So unlike Java or C, you don't have to be explicit in the type of variable you are declaring. You can just use the keyword `var`, and JavaScript will work out what you're talking about.</aside>
+                    </section>
+
+                    <!-- Numbers -->
+
+                    <section data-transition="none">
+                        <h2>Numbers</h2>
+<pre><code data-trim>
+3 * 4
+</code></pre>
+<span class="fragment">12</span>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Numbers</h2>
+<pre><code data-trim>
+72 / 8
+</code></pre>
+<span class="fragment">8</span>
+                    </section>
+
+                    <!-- Strings -->
+
+                    <section>
+                        <h2>Strings</h2>
+<pre><code data-trim>
+'hello'
+</code></pre>
+<span class="fragment">12</span>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Strings</h2>
+<pre><code data-trim>
+72 / 8
+</code></pre>
+<span class="fragment">8</span>
                     </section>
 
                     <section>
@@ -139,6 +259,19 @@
                  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
                 <section>
+                    <section>
+                        <h2>Numbers</h2>
+<pre><code data-trim>
+0.1 + 0.2
+</code></pre>
+<span class="fragment">0.30000000000000004</span>
+                    </section>
+
+                    <section>
+                        <h2>WAT? WHY?</h2>
+
+                        <p>Double-precision IEEE 64-bit format</p>
+                    </section>
 
                     <section>
                         <aside class="notes">However with all of these little quirks of the language, it hasn't prevented JavaScript from becoming, by far, one of the most widely used languages in the world (and also the most awesome!). I'll let Sarah tell you why.</aside>
