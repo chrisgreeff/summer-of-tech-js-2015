@@ -270,3 +270,77 @@ body {
 
 .reveal .about-section {
   display: flex !important; }
+
+/**
+ * SPINNING GLOBE IN CSS TAKEN FROM http://codepen.io/designil/pen/HGvcE
+ */
+@keyframes mapfront_spin {
+  0% {
+    background-position: 1400px 0%; }
+
+  100% {
+    background-position: 0 0%; } }
+
+@keyframes mapback_spin {
+  0% {
+    background-position: 0 0%; }
+
+  100% {
+    background-position: 1400px 0%; } }
+
+@-webkit-keyframes mapfront_spin {
+  0% {
+    background-position: 1400px 0%; }
+
+  100% {
+    background-position: 0 0%; } }
+
+@-webkit-keyframes mapback_spin {
+  0% {
+    background-position: 0 0%; }
+
+  100% {
+    background-position: 1400px 0%; } }
+
+.globe {
+  width: 400px;
+  height: 400px;
+  position: relative; }
+
+.front {
+  width: 400px;
+  height: 400px;
+  background: url(../../../images/SphereForeground.png);
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.back {
+  width: 400px;
+  height: 400px;
+  background: url(../../../images/SphereBackground.png);
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.mapfront, .mapback {
+  border-radius: 300px;
+  width: 340px;
+  height: 340px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 4; }
+
+.mapfront {
+  background: url(../../../images/CartoForeground.png) repeat-x;
+  -webkit-animation: mapfront_spin 15s linear infinite;
+  animation: mapfront_spin 15s linear infinite; }
+
+.mapback {
+  background: url(../../../images/CartoBackground.png) repeat-x;
+  position: absolute;
+  -webkit-animation: mapback_spin 15s linear infinite;
+  animation: mapback_spin 15s linear infinite; }
