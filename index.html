@@ -151,7 +151,7 @@
                         </aside>
                     </section>
 
-                    <section data-background="./images/gifs/crazy-typing2.gif">
+                    <section data-background="./images/gifs/crazy-typing3.gif">
                         <aside class="notes">When I first heard this, I didn't believe it, but it's totally legit! 10 days to complete. No idea what this guy was on to make that happen, but it's probably not legal.</aside>
                     </section>
 
@@ -240,7 +240,7 @@ var myBool = false;
                 <section>
                     <section data-transition="none">
                         <h2>Numbers</h2>
-<pre><code data-trim>
+<pre><code data-trim contenteditable>
 var x = 6;
 var y = 3;
 
@@ -255,7 +255,7 @@ x + y;
 
                     <section data-transition="none">
                         <h2>Numbers</h2>
-<pre><code data-trim>
+<pre><code data-trim contenteditable>
 var x = 6;
 var y = 3;
 
@@ -269,7 +269,7 @@ x + y; // 9
 
                     <section data-transition="none">
                         <h2>Numbers</h2>
-<pre><code data-trim>
+<pre><code data-trim contenteditable>
 var x = 0.1;
 var y = 0.2;
 
@@ -280,7 +280,7 @@ x + y;
 
                     <section data-transition="none">
                         <h2>Numbers</h2>
-<pre><code data-trim>
+<pre><code data-trim contenteditable>
 var x = 0.1;
 var y = 0.2;
 
@@ -297,7 +297,7 @@ x + y; // 0.30000000000000004
 
                     <section data-transition="none">
                         <h2>Precision Problems</h2>
-<pre><code data-trim>
+<pre><code data-trim contenteditable>
 var z = 5.525;
 
 z.toFixed(2); //
@@ -307,7 +307,7 @@ z.toFixed(2); //
 
                     <section data-transition="none">
                         <h2>Precision Problems</h2>
-<pre><code data-trim>
+<pre><code data-trim contenteditable>
 var z = 5.525;
 
 z.toFixed(2); // '5.52'
@@ -326,7 +326,7 @@ z.toFixed(2); // '5.52'
                 <section>
                     <section data-transition="none">
                         <h2>Strings</h2>
-<pre><code data-trim>
+<pre><code data-trim contenteditable>
 var str1 = 'Hello';
 var str2 = ' World!';
 
@@ -340,7 +340,7 @@ str1.substring(0, 2);
 
                     <section data-transition="none">
                         <h2>Strings</h2>
-<pre><code data-trim>
+<pre><code data-trim contenteditable>
 var str1 = 'Hello';
 var str2 = ' World!';
 
@@ -354,7 +354,7 @@ str2.substring(1, 4); // 'Wol'
 
                     <section data-transition="none">
                         <h2>Strings</h2>
-<pre><code data-trim>
+<pre><code data-trim contenteditable>
 var x = 6;
 var y = '3';
 
@@ -369,7 +369,7 @@ x + y;
 
                     <section data-transition="none">
                         <h2>Strings</h2>
-<pre><code data-trim>
+<pre><code data-trim contenteditable>
 var x = 6;
 var y = '3';
 
@@ -392,23 +392,66 @@ x + y; // '63'
                 <section>
                     <section data-transition="none">
                         <h2>Functions</h2>
-<pre><code data-trim>
+<pre><code data-trim contenteditable>
 function dance() {
   console.log('Boogie boogie!');
 }
 
 var double function(x) {
   return x * 2;
-}
+};
 
 dance(); // 'Boogie boogie!'
 double(16); // 32
 </code></pre>
+                        <aside class="notes">Ok, now lets move onto functions. There are 2 ways to create functions. Firstly with the keyword function and then the name. Or assigning it to a `var`. Invoking the function is similar to how you would in most languages, with brackets, and the params passed in.</aside>
                     </section>
 
                     <section data-transition="none">
                         <h2>Functions</h2>
-<pre><code data-trim>
+<pre><code data-trim contenteditable>
+var a = 'outer';
+
+function myFunc() {
+  var b = 'inner';
+
+  console.log(a);
+  console.log(b);
+}
+
+myFunc();
+
+console.log(a);
+console.log(b);
+</code></pre>
+
+                        <aside class="notes">On of the harder concepts to grasp in JS is their implementations of scopes. So in JS there is function scope. Meaning everything within the function brackets have access to everything declared within the function, and outside. Take this for example.</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Functions</h2>
+<pre><code data-trim contenteditable>
+var a = 'outer';
+
+function myFunc() {
+  var b = 'inner';
+
+  console.log(a); // 'outer'
+  console.log(b); // 'inner'
+}
+
+myFunc();
+
+console.log(a); // 'outer'
+console.log(b); // ERROR
+</code></pre>
+
+                        <aside class="notes">Here we can see the function has no trouble logging both a and b, since they are all in scope. However the outer console logs has no access to the variables declared within the function, even though it has been invoked. This is cool though! We're happy with this.</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Functions</h2>
+<pre><code data-trim contenteditable>
 var a = 'old value';
 
 function changeValueOfA() {
@@ -419,12 +462,34 @@ function changeValueOfA() {
 }
 
 changeValueOfA();
+console.log(a);
 </code></pre>
+
+                        <aside class="notes">So another example. In this case, when we call `changeValueOfA`, since we are manipulating `a` which is in the same scope, we should be able to change the value right?</aside>
                     </section>
 
                     <section data-transition="none">
                         <h2>Functions</h2>
-<pre><code data-trim>
+<pre><code data-trim contenteditable>
+var a = 'old value';
+
+function changeValueOfA() {
+  a = 'new value';
+  return;
+
+  function a() {};
+}
+
+changeValueOfA();
+console.log(a); // 'old value'
+</code></pre>
+
+                        <aside class="notes">Nope! So what's actually going on here? Well this is something called variable hoisting. And what's happening, is right before runtime, the JavaScript compiler actually processes this code block like this. Can you see the difference?</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Functions</h2>
+<pre><code data-trim contenteditable>
 var a = 'old value';
 
 function changeValueOfA() {
@@ -435,7 +500,10 @@ function changeValueOfA() {
 }
 
 changeValueOfA();
+console.log(a);
 </code></pre>
+
+                        <aside class="notes">The function declaration of `a` is hoisted to the top of the function scope. So now all of a sudden the `a` we thought we were manipulating is now the locally scoped function declaration. And due to the scope concept we were talking about previously, this leaves the outer variable untouched. Problems like this can leave us developers feeling like this.</aside>
                     </section>
 
                     <section data-background="./images/gifs/confused4.gif">
@@ -453,11 +521,12 @@ var obj = {};
 
 var obj = new Object();
 </code></pre>
+                        <aside class="notes">Ok lets take a look at Objects. Essentially the easiest way to think of objects in JavaScript, is hashmaps in Java, or associative arrays in PHP. So key value pair. There are two ways to create simple objects. Although you should almost never use the second way.</aside>
                     </section>
 
                     <section data-transition="none">
                         <h2>Objects</h2>
-<pre><code data-trim>
+<pre><code data-trim contenteditable>
 var danceBot = {
   name: 'DanceBot',
   'version': 5000
@@ -467,24 +536,22 @@ danceBot.dance = function() {
   console.log('Boogie boogie boogie, all night long!')
 };
 </code></pre>
+                        <aside class="notes">So here, I am declaring an object, with predefined properties of any type, strings, booleans, whatever. And I can also add properties at anytime bu just assigning it. So here I am assigning a function.</aside>
                     </section>
 
                     <section data-transition="none">
                         <h2>Objects</h2>
 
-<pre><code data-trim>
-function Person(config) {
+<pre><code data-trim contenteditable>
+function Person(name, age, lovesToDance) {
   this.name = config.name;
   this.age = config.age;
   this.lovesToDance = config.lovesToDance;
 }
 
-var chris = new Person({
-  name: 'Chris',
-  age: 26,
-  lovesToDance: true
-});
+var chris = new Person('Chris', 26, true);
 </code></pre>
+                        <aside class="notes">JavaScript is also an Object Oriented language, so we can create instances of objects like this. Declaring a constructor as a function, and assigning properties to the instance with the `this` keyword. So in this example, we have a function named Person. To create an instance, we just need the `new` keyword before the function, and JavaScript knows to return an object.</aside>
                     </section>
                 </section>
 
@@ -493,59 +560,71 @@ var chris = new Person({
                     <section data-transition="none">
                         <h2>Arrays</h2>
 
-<pre><code data-trim>
+<pre><code data-trim contenteditable>
 var arr = [];
 
 var arr = new Array();
 </code></pre>
+                        <aside class="notes">Another special type of object are arrays. Similarly there are 2 ways to create arrays.</aside>
                     </section>
 
                     <section data-transition="none">
                         <h2>Arrays</h2>
 
-<pre><code data-trim>
+<pre><code data-trim contenteditable>
 var arr = ['dog', 'cat', 'hen'];
-arr.length;
+arr.length; // ?
+
+arr.push('mouse');
+arr.length; // ?
 </code></pre>
+                        <aside class="notes">You can assign values to the array like this. So predefining values into the array on declaration. And then pushing values to the stack using the `push` function. So the lengths for these two lines would be?</aside>
                     </section>
 
                     <section data-transition="none">
                         <h2>Arrays</h2>
 
-<pre><code data-trim>
+<pre><code data-trim contenteditable>
 var arr = ['dog', 'cat', 'hen'];
 arr.length; // 3
+
+arr.push('mouse');
+arr.length; // 4
 </code></pre>
+                        <aside class="notes">3 and 4. Yep!</aside>
                     </section>
 
                     <section data-transition="none">
                         <h2>Arrays</h2>
 
-<pre><code data-trim>
+<pre><code data-trim contenteditable>
 var arr = ['dog', 'cat', 'hen'];
 
 arr[100] = 'mouse';
 arr.length;
 </code></pre>
+                        <aside class="notes">How about if I do this? What should happen?</aside>
                     </section>
 
                     <section data-transition="none">
                         <h2>Arrays</h2>
 
-<pre><code data-trim>
+<pre><code data-trim contenteditable>
 var arr = ['dog', 'cat', 'hen'];
 
 arr[100] = 'mouse';
 arr.length; // 101
 </code></pre>
+                        <aside class="notes">Not what you expect...</aside>
                     </section>
 
                     <section data-background="./images/gifs/confused3.gif">
                         <p><code>'dog','cat','hen',,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,'mouse'</code></p>
+                        <aside class="notes">So what's going on?? JavaScript has assigned the 100'th element in the array with 'mouse', but also taken the liberty of assigning all elements of the array with undefined. Thanks JavaScript!</aside>
                     </section>
                 </section>
 
-                <section>
+                <section data-background="./images/gifs/js-wat.gif">
                     <aside class="notes">However with all of these little quirks of the language, it hasn't prevented JavaScript from becoming, by far, one of the most widely used languages in the world (and also the most awesome!). I'll let Sarah tell you why.</aside>
                 </section>
 
