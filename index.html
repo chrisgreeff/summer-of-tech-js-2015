@@ -767,20 +767,20 @@ arr.length; // 101
                     </section>
                     <section data-background="./images/twitter.png">
                         <aside class="notes">
-                            <p>Another example of a popular tool built with JavaScript<p>
-                            <p>Also a tool used heavily by our community</p>
+                            <p>Twitter</p>
+                            <p>So yes this is another example of a popular tool built with JavaScript<p>
+                            <p>But it is also a tool used heavily by our community</p>
                         </aside>
                     </section>
                     <section>
-                        <img src="./images/twitter-logo.png">
+                        <img src="./images/twitter-logo.png" style="background: none; border: none;">
                         <aside class="notes">
-                            <p>You can find heaps of useful information; interesting developers &amp; designers to follow; &amp; really engage with the industry on here.</p>
+                            <p>You can find heaps of useful information; interesting developers, designers &amp; events to follow; &amp; really engage with the industry on here.</p>
                             <p>Using it as a tool to follow interesting topics &amp; favorite stuff without saying much is totally cool</p>
                             <p>It's also a great platform to share things you create.</p>
                         </aside>
                     </section>
-                    <section>
-                        <img src="./images/twitter-logo.png">
+                    <section data-background="./images/twitter-logo.png" class="fit">
                         <h2>#summeroftech</h2>
                         <h2>#JSunderdogstory</h2>
                         <aside class="notes">
@@ -831,22 +831,19 @@ arr.length; // 101
                     </aside>
                 </section>
 
-                <section>
-                    <video data-autoplay src="./Data/robots.m4v" class="stretch"></video>
+                <section data-background-video="./Data/robots.m4v">
                     <aside class="notes">
                         <p>Robots</p>
                     </aside>
                 </section>
 
-                <section>
-                    <video data-autoplay src="./Data/nodebots.m4v" class="stretch"></video>
+                <section data-background-video="./Data/nodebots.m4v" >
                     <aside class="notes">
                         <p>Nodebots</p>
                     </aside>
                 </section>
 
-                <section>
-                    <video data-autoplay src="/Data/shubot.m4v" class="stretch"></video>
+                <section data-background-video="/Data/shubot.m4v">
                     <aside class="notes">
                         <p>Shubot</p>
 
@@ -1194,6 +1191,9 @@ That’s all that I have in progress right now, pretty excited to keep tinkering
             // Full list of configuration options available at:
             // https://github.com/hakimel/reveal.js#configuration
             Reveal.initialize({
+                // Should we fit it to a certain size?
+                //width:
+                //height:
                 controls: true,
                 progress: true,
                 history: true,
