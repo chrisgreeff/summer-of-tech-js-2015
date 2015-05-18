@@ -467,6 +467,44 @@ function changeValueOfA() {
   a = 'new';
   return;
 
+
+}
+
+console.log(a); // ?
+changeValueOfA();
+console.log(a); // ?
+</code></pre>
+
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Functions</h2>
+<pre><code data-trim contenteditable>
+var a = 'old';
+
+function changeValueOfA() {
+  a = 'new';
+  return;
+
+
+}
+
+console.log(a); // 'old'
+changeValueOfA();
+console.log(a); // 'new'
+</code></pre>
+
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Functions</h2>
+<pre><code data-trim contenteditable>
+var a = 'old';
+
+function changeValueOfA() {
+  a = 'new';
+  return;
+
   function a() {};
 }
 
@@ -583,27 +621,13 @@ var arr = new Array();
 
 <pre><code data-trim contenteditable>
 var arr = ['dog', 'cat', 'hen'];
-arr.length; // ?
-
-arr.push('mouse');
-arr.length; // ?
-arr[1]; // ?
-</code></pre>
-                        <aside class="notes">You can assign values to the array like this. So predefining values into the array on declaration. And then pushing values to the stack using the `push` function. So the lengths for these two lines would be?</aside>
-                    </section>
-
-                    <section data-transition="none">
-                        <h2>Arrays</h2>
-
-<pre><code data-trim contenteditable>
-var arr = ['dog', 'cat', 'hen'];
 arr.length; // 3
 
 arr.push('mouse');
 arr.length; // 4
 arr[1]; // 'cat'
 </code></pre>
-                        <aside class="notes">3 and 4. Yep!</aside>
+                        <aside class="notes">You can assign values to the array like this. So predefining values into the array on declaration. And then pushing values to the stack using the `push` function.</aside>
                     </section>
 
                     <section data-transition="none">
