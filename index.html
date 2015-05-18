@@ -15,6 +15,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
         <link rel="stylesheet" href="css/reveal.css">
+
         <link rel="stylesheet" href="css/theme/custom.css" id="theme">
 
         <!-- Code syntax highlighting -->
@@ -37,93 +38,604 @@
         <div class="reveal">
             <div class="slides">
                 <section>
+                    <h1>Summer of Tech</h1>
+                    <h3>JavaScript</h3>
+                </section>
+
+                <section>
                     <h1>JavaScript</h1>
                     <h2>An underdog story.</h2>
                 </section>
 
-                <section>
-                    <h2>Intro</h2>
-                </section>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                            INTRO
+                 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
                 <section>
-                    <h2>@vendhq</h2>
-                    <aside class="notes">
-                        <p>I started at Vend when we were quite small, just starting out</p>
-                        <p>I've been part of our growth from 20 people chatting in a room just under 3 years ago, to a company that is now 6 offices around the world totaling about 250 people...</p>
-                        <p>Within our Product &amp; Engineering team (which is where I am) that growth has been from about 11 when I started to about 70 now. Most of us are here in Auckland, and 5 are in our new Wellington office</p>
-                        <p>Almost 3 years of crazy awesomeness as well as crazy hard work.</p>
-                    </aside>
+                    <section data-background="./images/vend-fam.jpg">
+                        <aside class="notes">Hey guys, I'm Chris and this is Sarah, and we work for a small start up called Vend.</aside>
+                    </section>
+
+                    <section>
+                        ADD MORE IMAGES ON WEBREGISTER AND ECOMMERCE
+                    </section>
+
+                    <section>
+                        <h2>2011</h2>
+                        <img src="./images/vend-fam-christmas1.jpg">
+                        <p>8 people</p>
+                    </section>
+
+                    <section>
+                        <h2>2012</h2>
+                        <img src="./images/vend-fam-christmas2.jpg">
+                        <p>31 people</p>
+                    </section>
+
+                    <section>
+                        <h2>2013</h2>
+                        <img src="./images/vend-fam-christmas3.jpg">
+                        <p>~170 people world wide</p>
+                    </section>
+
+                    <section data-background="./images/vend-fam-christmas4.jpg">
+                        <aside class="notes">Heres a photo of the New Zealand team at our last Christmas party. You can kind of see me and Sarah here.</aside>
+                    </section>
+
+                    <section data-background="./images/vend-fam-christmas4.jpg" data-transition="none">
+                        <img src="./images/chris-vend-fam.png">
+                    </section>
+
+                    <section data-background="./images/vend-fam-christmas4.jpg" data-transition="none">
+                        <img src="./images/sarah-vend-fam.png">
+                    </section>
+
+                    <section>
+                        <img src="./images/html5.png" style="height: 300px">
+                        <img src="./images/css3.png" style="height: 300px">
+                        <img src="./images/js.png" style="height: 300px">
+                        <aside class="notes">So aside from part time modeling, me and Sarah spend our days working with HTML, CSS and JavaScript, helping Vend build beautiful web applications that retailers love to use. So we've been asked to give you guys an overview about this one, so I thought the best place to start would be the beginning</aside>
+                    </section>
+
+                    <section>
+                        <img src="./images/js.png">
+                    </section>
                 </section>
+
+                <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                            HISTORY
+                 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
                 <section>
-                    <h2>@vendhq</h2>
-                    <aside class="notes">
-                        <p>At Vend we build software for retailers.</p>
-                        <p>We use pretty neat tech and paired with our culture, people, team stuff and everything that goes on - it is a pretty exciting place to be everyday</p>
-                        <p>We've got heaps of new things coming out this year actually that I'm super stoked about showing off</p>
-                    </aside>
+                    <section>
+                        <h2>Brendan Eich</h2>
+                        <img src="./images/gifs/brendan-eich.jpg">
+                        <aside class="notes">So first, a history lesson. JavaScript was written by this guy, Brendan Eich, and it first appeared in</aside>
+                    </section>
+
+                    <section>
+                        <h2>First appeared in 1995</h2>
+                        <img src="./images/netscape-2-splash.png">
+                        <aside class="notes">1995 with the release of NetScape 2. Back when browsers used to looks like this.</aside>
+                    </section>
+
+                    <section>
+                        <img src="./images/netscape-2.png">
+                         <aside class="notes">Any of you guys remember when your browsers looked like this? Were any of you alive? I can still remember clearly, the whole family crowding around the computer, and being amazed at how fast the progress bar at the bottom used to move.</aside>
+                    </section>
+
+                    <section>
+                        <h2>Time it took to complete</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="text-align: center;">Language</th>
+                                    <th style="text-align: center;">Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="text-align: center;">Java</td>
+                                    <td style="text-align: center; color: #5688DD;">4 years</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">Python</td>
+                                    <td style="text-align: center; color: #5688DD;">2 years</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">C++</td>
+                                    <td style="text-align: center; color: #5688DD;">6 years</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">JavaScript</td>
+                                    <td style="text-align: center;"><strong class="fragment" style="color: #CA5959;">10 days</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <aside class="notes">
+                            Anyway, so first appeared in 1995. Anyone want to hazard a guess as to how long it took to implement? Here's a bit of help. JavaScript took 10 days to complete.
+                        </aside>
+                    </section>
+
+                    <section data-background="./images/gifs/crazy-typing3.gif">
+                        <aside class="notes">When I first heard this, I didn't believe it, but it's totally legit! 10 days to complete. No idea what this guy was on to make that happen, but it's probably not legal.</aside>
+                    </section>
+
+                    <section data-background="./images/gifs/simon-laugh3.gif" data-background-size="1000px" >
+                        <aside class="notes">As a result of being a language that was written in such a ridiculously short amount of time, there are a few quirks with the language, making it probably the most misunderstood mainstream languages in the world. Why? Well lets take a look at the language itself!</aside>
+                    </section>
                 </section>
+
+                <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                            LANGUAGE
+                 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
                 <section>
-                    <h2>Web Register</h2>
-                    <aside class="notes">
-                        <p>This is one of the products I help build:</p>
-                        <p>- Our point of sale</p>
-                        <p>This version is in beta at the moment which is exciting  If any of you have worked in retail you are probably familiar with POS !</p>
-                        <p>As customers when you go into a store, pick an item, have it scanned, discounted, and what not &amp; then you pay for it, that's what you're dealing with</p>
-                    </aside>
+                    <section>
+                        <h2>The Language</h2>
+
+                        <aside class="notes">Now before I start, are there any here that has some JavaScript experience? If you have, you probably know some if this already, so I'd ask you, if you know the answers to give the others here a fighting chance.</aside>
+                    </section>
+                    <section>
+                        <h2>Types</h2>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="text-align: center;">Type</th>
+                                    <th style="text-align: center;">Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="text-align: center;">Number</td>
+                                    <td style="text-align: center;"><code>3</code></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">String</td>
+                                    <td style="text-align: center;"><code>'swagger'</code></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">Boolean</td>
+                                    <td style="text-align: center;"><code>true</code></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">Object</td>
+                                    <td style="text-align: center;"><code>{ name: 'Bond' }</code></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">Array</td>
+                                    <td style="text-align: center;"><code>[1, 2, 3]</code></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">Function</td>
+                                    <td style="text-align: center;"><code>function dance() {}</code></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">Null</td>
+                                    <td style="text-align: center;"><code>null</code></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">Undefined</td>
+                                    <td style="text-align: center;"><code>undefined</code></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">Not a Number</td>
+                                    <td style="text-align: center;"><code>NaN</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <aside class="notes">So like any language there are a number of different types in JavaScript. You're probably familiar with most of these, except for maybe NaN and undefined. I won't go through all of these in detail, but just to give you a quick overview if you aren't already familiar</aside>
+                    </section>
+
+                    <section>
+                        <h2>Loosely Typed</h2>
+<pre><code data-trim contenteditable>
+var myNum = 32;
+
+var myStr = 'Puppies!';
+
+var myBool = false;
+</code></pre>
+                        <aside class="notes">Before I move onto move details about the types, I should mention that JavaScript is a loosely typed language. So unlike Java or C, you don't have to be explicit in the type of variable you are declaring. You can just use the keyword `var`, and JavaScript will work out what you're talking about.</aside>
+                    </section>
                 </section>
 
+                <!-- Numbers -->
                 <section>
-                    <h2>E-commerce</h2>
-                    <aside class="notes">
-                        <p>? Chris ?</p>
-                    </aside>
+                    <section data-transition="none">
+                        <h2>Numbers</h2>
+<pre><code data-trim contenteditable>
+var x = 6;
+var y = 3;
+
+x * y;
+x / y;
+x - y;
+x + y;
+</code></pre>
+
+                        <aside class="notes">Ok lets start with numbers. Here we are defining two integers 6 and 3, and performing some basic operations on them.</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Numbers</h2>
+<pre><code data-trim contenteditable>
+var x = 6;
+var y = 3;
+
+x * y; // 18
+x / y; // 2
+x - y; // 3
+x + y; // 9
+</code></pre>
+                        <aside class="notes">This gives us results just as you'd expect.</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Numbers</h2>
+<pre><code data-trim contenteditable>
+var x = 0.1;
+var y = 0.2;
+
+x + y;
+</code></pre>
+                        <aside class="notes">How about decimal values? Can you tell me what you should get here?</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Numbers</h2>
+<pre><code data-trim contenteditable>
+var x = 0.1;
+var y = 0.2;
+
+x + y; // 0.30000000000000004
+</code></pre>
+                        <aside class="notes">Nope! Why is this happening?</aside>
+                    </section>
+
+                    <section data-background="./images/gifs/confused.gif">
+                        <p><code>0.1 + 0.2 = 0.30000000000000004</code></p>
+
+                        <aside class="notes">The reason for this, is JavaScript only has 1 number type, and that's double-precision 64-bit. Meaning it is crap at precision.</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Precision Problems</h2>
+<pre><code data-trim contenteditable>
+var z = 5.525;
+
+z.toFixed(2); //
+</code></pre>
+                        <aside class="notes">This is a real problem that me and Sarah have had to solve in Vend! Lets say for instance, we have a point of sale system, and you're dealing with cents. So lets take a look at this example. `toFixed` is a function you can call on a number to round the value to the number of decimal places specified. So what would you expect this to give?</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Precision Problems</h2>
+<pre><code data-trim contenteditable>
+var z = 5.525;
+
+z.toFixed(2); // '5.52'
+</code></pre>
+                        <aside class="notes">That's not what we get. And as surprising as it's sounds, when retailers find out you've been short changing them 1c</aside>
+                    </section>
+
+                    <section data-background="./images/gifs/angry.gif">
+                        <h2>WHERE'S MA MONEY!?</h2>
+
+                        <aside class="notes">They are not happy.</aside>
+                    </section>
                 </section>
 
+                <!-- Strings -->
                 <section>
-                    <h2>More</h2>
-                    <aside class="notes">
-                        <p>We also build: iOS apps</p>
-                        <p>This is another POS</p>
-                    </aside>
+                    <section data-transition="none">
+                        <h2>Strings</h2>
+<pre><code data-trim contenteditable>
+var str1 = 'Hello';
+var str2 = ' World!';
+
+str1 + str2;
+str1.length;
+str1.substring(0, 2);
+</code></pre>
+
+                    <aside class="notes">OK lets take a look at strings. So here we have two strings declared, and we can perform some operations on them, like concatenation, find the length, or extract a substring within another string.</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Strings</h2>
+<pre><code data-trim contenteditable>
+var str1 = 'Hello';
+var str2 = ' World!';
+
+str1 + str2; // 'Hello World!'
+str1.length; // 5
+str2.substring(1, 4); // 'Wol'
+</code></pre>
+
+                    <aside class="notes">Giving us just as you'd expect "Hello World!", 5 for the length, and "Wol" when sub-stringing</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Strings</h2>
+<pre><code data-trim contenteditable>
+var x = 6;
+var y = '3';
+
+x * y;
+x / y;
+x - y;
+x + y;
+</code></pre>
+
+                        <aside class="notes">In addition JavaScript smart! It can figure out what you're trying do some of the time. Take these examples, when trying to perform mathematical operations between numbers and strings. As you'd expect, we would get all the same results as we did previously</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Strings</h2>
+<pre><code data-trim contenteditable>
+var x = 6;
+var y = '3';
+
+x * y; // 18
+x / y; // 2
+x - y; // 3
+x + y; // '63'
+</code></pre>
+                        <aside class="notes">Except for the last one...</aside>
+                    </section>
+
+                    <section data-background="./images/gifs/confused2.gif">
+                        <p><code>6 + '3' = '63'</code></p>
+
+                        <aside class="notes">Why is that? The reason is, Concatenation will always take precedence when performing addition, and there is a string involved. Always.</aside>
+                    </section>
                 </section>
 
+                <!-- Functions -->
                 <section>
-                    <h2>More</h2>
-                    <aside class="notes">
-                        <p>Reporting systems, Spaces for retailers to setup and manage their store &amp; take Inventory</p>
-                        <p>As well as all the:</p>
-                        <ul>
-                            <li>Internal admin portals</li>
-                            <li>Dashboards</li>
-                            <li>and so on</li>
-                        <ul>
-                        <p>There's LOTS going on</p>
-                    </aside>
+                    <section data-transition="none">
+                        <h2>Functions</h2>
+<pre><code data-trim contenteditable>
+function dance() {
+  console.log('Boogie boogie!');
+}
+
+var double function(x) {
+  return x * 2;
+};
+
+dance(); // 'Boogie boogie!'
+double(16); // 32
+</code></pre>
+                        <aside class="notes">Ok, now lets move onto functions. There are 2 ways to create functions. Firstly with the keyword function and then the name. Or assigning it to a `var`. Invoking the function is similar to how you would in most languages, with brackets, and the params passed in.</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Functions</h2>
+<pre><code data-trim contenteditable>
+var a = 'outer';
+
+function myFunc() {
+  var b = 'inner';
+
+  console.log(a);
+  console.log(b);
+}
+
+myFunc();
+
+console.log(a);
+console.log(b);
+</code></pre>
+
+                        <aside class="notes">On of the harder concepts to grasp in JS is their implementations of scopes. So in JS there is function scope. Meaning everything within the function brackets have access to everything declared within the function, and outside. Take this for example.</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Functions</h2>
+<pre><code data-trim contenteditable>
+var a = 'outer';
+
+function myFunc() {
+  var b = 'inner';
+
+  console.log(a); // 'outer'
+  console.log(b); // 'inner'
+}
+
+myFunc();
+
+console.log(a); // 'outer'
+console.log(b); // ERROR
+</code></pre>
+
+                        <aside class="notes">Here we can see the function has no trouble logging both a and b, since they are all in scope. However the outer console logs has no access to the variables declared within the function, even though it has been invoked. This is cool though! We're happy with this.</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Functions</h2>
+<pre><code data-trim contenteditable>
+var a = 'old value';
+
+function changeValueOfA() {
+  a = 'new value';
+  return;
+
+  function a() {};
+}
+
+changeValueOfA();
+console.log(a);
+</code></pre>
+
+                        <aside class="notes">So another example. In this case, when we call `changeValueOfA`, since we are manipulating `a` which is in the same scope, we should be able to change the value right?</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Functions</h2>
+<pre><code data-trim contenteditable>
+var a = 'old value';
+
+function changeValueOfA() {
+  a = 'new value';
+  return;
+
+  function a() {};
+}
+
+changeValueOfA();
+console.log(a); // 'old value'
+</code></pre>
+
+                        <aside class="notes">Nope! So what's actually going on here? Well this is something called variable hoisting. And what's happening, is right before runtime, the JavaScript compiler actually processes this code block like this. Can you see the difference?</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Functions</h2>
+<pre><code data-trim contenteditable>
+var a = 'old value';
+
+function changeValueOfA() {
+  function a() {};
+  a = 'new value';
+
+  return;
+}
+
+changeValueOfA();
+console.log(a);
+</code></pre>
+
+                        <aside class="notes">The function declaration of `a` is hoisted to the top of the function scope. So now all of a sudden the `a` we thought we were manipulating is now the locally scoped function declaration. And due to the scope concept we were talking about previously, this leaves the outer variable untouched. Problems like this can leave us developers feeling like this.</aside>
+                    </section>
+
+                    <section data-background="./images/gifs/confused4.gif">
+                        Is this even real life?
+                    </section>
                 </section>
 
+                <!-- Objects -->
                 <section>
-                    <h2>Team gif</h2>
-                    <aside class="notes">
-                        <p>This is a typical team building one of those products.</p>
-                        <p>Product people including Designers; and Engineers specialising in Front end tech, quality assurance, back end tech or infrastructure</p>
-                    </aside>
+                    <section data-transition="none">
+                        <h2>Objects</h2>
+
+<pre><code data-trim contenteditable>
+var obj = {};
+
+var obj = new Object();
+</code></pre>
+                        <aside class="notes">Ok lets take a look at Objects. Essentially the easiest way to think of objects in JavaScript, is hashmaps in Java, or associative arrays in PHP. So key value pair. There are two ways to create simple objects. Although you should almost never use the second way.</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Objects</h2>
+<pre><code data-trim contenteditable>
+var danceBot = {
+  name: 'DanceBot',
+  'version': 5000
+};
+
+danceBot.dance = function() {
+  console.log('Boogie boogie boogie, all night long!')
+};
+</code></pre>
+                        <aside class="notes">So here, I am declaring an object, with predefined properties of any type, strings, booleans, whatever. And I can also add properties at anytime bu just assigning it. So here I am assigning a function.</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Objects</h2>
+
+<pre><code data-trim contenteditable>
+function Person(name, age, lovesToDance) {
+  this.name = config.name;
+  this.age = config.age;
+  this.lovesToDance = config.lovesToDance;
+}
+
+var chris = new Person('Chris', 26, true);
+</code></pre>
+                        <aside class="notes">JavaScript is also an Object Oriented language, so we can create instances of objects like this. Declaring a constructor as a function, and assigning properties to the instance with the `this` keyword. So in this example, we have a function named Person. To create an instance, we just need the `new` keyword before the function, and JavaScript knows to return an object.</aside>
+                    </section>
                 </section>
 
+                <!-- Arrays -->
                 <section>
-                    <h2>Tech slide</h2>
-                    <aside class="notes">
-                        <p>This is some of the tech we use in those teams to create those products, (I'm focusing mostly on front end side because that's my space):</p>
-                        <p>IndexedDB, AppCache Manifest</p>
-                        <p>npm, bower, gulp, protractor, selenium, mocha</p>
-                        <p>Angular.js, SMACSS,</p>
-                        <p>Automation; Continuous Integration; Micro-services; the list goes on</p>
-                        <p>As I mentioned we've been building lots of amazing stuff this year and if you want to find out more Chris &amp; I are available for questions during pizza, and we are also all on Twitter</p>
-                    </aside>
+                    <section data-transition="none">
+                        <h2>Arrays</h2>
+
+<pre><code data-trim contenteditable>
+var arr = [];
+
+var arr = new Array();
+</code></pre>
+                        <aside class="notes">Another special type of object are arrays. Similarly there are 2 ways to create arrays.</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Arrays</h2>
+
+<pre><code data-trim contenteditable>
+var arr = ['dog', 'cat', 'hen'];
+arr.length; // ?
+
+arr.push('mouse');
+arr.length; // ?
+</code></pre>
+                        <aside class="notes">You can assign values to the array like this. So predefining values into the array on declaration. And then pushing values to the stack using the `push` function. So the lengths for these two lines would be?</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Arrays</h2>
+
+<pre><code data-trim contenteditable>
+var arr = ['dog', 'cat', 'hen'];
+arr.length; // 3
+
+arr.push('mouse');
+arr.length; // 4
+</code></pre>
+                        <aside class="notes">3 and 4. Yep!</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Arrays</h2>
+
+<pre><code data-trim contenteditable>
+var arr = ['dog', 'cat', 'hen'];
+
+arr[100] = 'mouse';
+arr.length;
+</code></pre>
+                        <aside class="notes">How about if I do this? What should happen?</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Arrays</h2>
+
+<pre><code data-trim contenteditable>
+var arr = ['dog', 'cat', 'hen'];
+
+arr[100] = 'mouse';
+arr.length; // 101
+</code></pre>
+                        <aside class="notes">Not what you expect...</aside>
+                    </section>
+
+                    <section data-background="./images/gifs/confused3.gif">
+                        <p><code>'dog','cat','hen',,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,'mouse'</code></p>
+                        <aside class="notes">So what's going on?? JavaScript has assigned the 100'th element in the array with 'mouse', but also taken the liberty of assigning all elements of the array with undefined. Thanks JavaScript!</aside>
+                    </section>
                 </section>
 
-                <!-- Chris ? -->
+                <section data-background="./images/gifs/js-wat.gif">
+                    <aside class="notes">However with all of these little quirks of the language, it hasn't prevented JavaScript from becoming, by far, one of the most widely used languages in the world (and also the most awesome!). I'll let Sarah tell you why.</aside>
+                </section>
+
+                 <!-- Chris ? -->
 
                 <section>
                     <h2>Node.js</h2>
@@ -137,6 +649,90 @@
                     <aside class="notes">
                         <p>A slide touching on CoffeeScript; Type Script; etc</p>
                     </aside>
+                </section>
+
+                <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                            SARAH
+                 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+                <section>
+                    <section>
+                        <h2>@vendhq</h2>
+                        <aside class="notes">
+                            <p>I started at Vend when we were quite small, just starting out</p>
+                            <p>I've been part of our growth from 20 people chatting in a room just under 3 years ago, to a company that is now 6 offices around the world totaling about 250 people...</p>
+                            <p>Within our Product &amp; Engineering team (which is where I am) that growth has been from about 11 when I started to about 70 now. Most of us are here in Auckland, and 5 are in our new Wellington office</p>
+                            <p>Almost 3 years of crazy awesomeness as well as crazy hard work.</p>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>@vendhq</h2>
+                        <aside class="notes">
+                            <p>At Vend we build software for retailers.</p>
+                            <p>We use pretty neat tech and paired with our culture, people, team stuff and everything that goes on - it is a pretty exciting place to be everyday</p>
+                            <p>We've got heaps of new things coming out this year actually that I'm super stoked about showing off</p>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>Web Register</h2>
+                        <aside class="notes">
+                            <p>This is one of the products I help build:</p>
+                            <p>- Our point of sale</p>
+                            <p>This version is in beta at the moment which is exciting  If any of you have worked in retail you are probably familiar with POS !</p>
+                            <p>As customers when you go into a store, pick an item, have it scanned, discounted, and what not &amp; then you pay for it, that's what you're dealing with</p>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>E-commerce</h2>
+                        <aside class="notes">
+                            <p>? Chris ?</p>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>More</h2>
+                        <aside class="notes">
+                            <p>We also build: iOS apps</p>
+                            <p>This is another POS</p>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>More</h2>
+                        <aside class="notes">
+                            <p>Reporting systems, Spaces for retailers to setup and manage their store &amp; take Inventory</p>
+                            <p>As well as all the:</p>
+                            <ul>
+                                <li>Internal admin portals</li>
+                                <li>Dashboards</li>
+                                <li>and so on</li>
+                            </ul>
+                            <p>There's LOTS going on</p>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>Team gif</h2>
+                        <aside class="notes">
+                            <p>This is a typical team building one of those products.</p>
+                            <p>Product people including Designers; and Engineers specialising in Front end tech, quality assurance, back end tech or infrastructure</p>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>Tech slide</h2>
+                        <aside class="notes">
+                            <p>This is some of the tech we use in those teams to create those products, (I'm focusing mostly on front end side because that's my space):</p>
+                            <p>IndexedDB, AppCache Manifest</p>
+                            <p>npm, bower, gulp, protractor, selenium, mocha</p>
+                            <p>Angular.js, SMACSS,</p>
+                            <p>Automation; Continuous Integration; Micro-services; the list goes on</p>
+                            <p>As I mentioned we've been building lots of amazing stuff this year and if you want to find out more Chris &amp; I are available for questions during pizza, and we are also all on Twitter</p>
+                        </aside>
+                    </section>
                 </section>
 
                 <!-- Me -->
