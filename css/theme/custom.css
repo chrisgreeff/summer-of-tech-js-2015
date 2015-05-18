@@ -269,6 +269,7 @@ body {
   margin-bottom: 150px; }
 
 .reveal .about-section {
+  display: -webkit-flex !important;
   display: flex !important; }
 
 /**
@@ -301,6 +302,13 @@ body {
 
   100% {
     background-position: 1400px 0%; } }
+
+.reveal .globe-slide {
+  display: -webkit-flex !important;
+  display: flex !important;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  align-items: center; }
 
 .globe {
   width: 400px;
