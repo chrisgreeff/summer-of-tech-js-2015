@@ -116,10 +116,6 @@
                         <img src="./images/js.png" style="height: 300px">
                         <aside class="notes">So aside from part time modeling, me and Sarah spend our days working with HTML, CSS and JavaScript, helping Vend build beautiful web applications that retailers love to use. So we've been asked to give you guys an overview about this one, so I thought the best place to start would be the beginning</aside>
                     </section>
-
-                    <section>
-                        <img src="./images/js.png">
-                    </section>
                 </section>
 
                 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -127,6 +123,12 @@
                  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
                 <section>
+                    <section>
+                        <img src="./images/js.png">
+
+                        <aside class="notes">Ok So me and Sarah have been asked to give you an overview of JavaScript, so I thought the best place to start would be the beginning.</aside>
+                    </section>
+
                     <section>
                         <h2>Brendan Eich</h2>
                         <img src="./images/gifs/brendan-eich.jpg">
@@ -192,13 +194,24 @@
                  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
                 <section>
-                    <section class="underdog">
+                    <!-- <section class="underdog">
                         <h1>The Language</h1>
                         <aside class="notes">
                             <p>Now before I start, are there any here that has some JavaScript experience?</p>
                             <p>If you have, you probably know some if this already, so I'd ask you, if you know the answers to give the others here a fighting chance.</p>
                         </aside>
+                    </section> -->
+
+                    <section>
+                        <h2>The Language</h2>
+                        <ul>
+                            <li>Object-oriented scripting language</li>
+                            <li>Has standard object libraries (<code>Math, Date</code>)</li>
+                            <li>Both client-side (Browser) and server-side (NodeJS)</li>
+                        </ul>
+                        <aside class="notes">Now before I start, are there any here that has some JavaScript experience? If you have, you probably know some if this already, so I'd ask you, if you know the answers to give the others here a fighting chance.</aside>
                     </section>
+
                     <section>
                         <h2>Types</h2>
                         <table style="font-size: 32px;">
@@ -272,10 +285,10 @@ var myBool = false;
 var x = 6;
 var y = 3;
 
-x * y;
-x / y;
-x - y;
-x + y;
+x * y; // ?
+x / y; // ?
+x - y; // ?
+x + y; // ?
 </code></pre>
 
                         <aside class="notes">Ok lets start with numbers. Here we are defining two integers 6 and 3, and performing some basic operations on them.</aside>
@@ -301,7 +314,7 @@ x + y; // 9
 var x = 0.1;
 var y = 0.2;
 
-x + y;
+x + y; // ?
 </code></pre>
                         <aside class="notes">How about decimal values? Can you tell me what you should get here?</aside>
                     </section>
@@ -328,7 +341,7 @@ x + y; // 0.30000000000000004
 <pre><code data-trim contenteditable>
 var z = 5.525;
 
-z.toFixed(2); //
+z.toFixed(2); // ?
 </code></pre>
                         <aside class="notes">This is a real problem that me and Sarah have had to solve in Vend! Lets say for instance, we have a point of sale system, and you're dealing with cents. So lets take a look at this example. `toFixed` is a function you can call on a number to round the value to the number of decimal places specified. So what would you expect this to give?</aside>
                     </section>
@@ -358,9 +371,9 @@ z.toFixed(2); // '5.52'
 var str1 = 'Hello';
 var str2 = ' World!';
 
-str1 + str2;
-str1.length;
-str1.substring(0, 2);
+str1 + str2; // ?
+str1.length; // ?
+str2.substring(0, 2); // ?
 </code></pre>
 
                     <aside class="notes">OK lets take a look at strings. So here we have two strings declared, and we can perform some operations on them, like concatenation, find the length, or extract a substring within another string.</aside>
@@ -386,10 +399,10 @@ str2.substring(1, 4); // 'Wol'
 var x = 6;
 var y = '3';
 
-x * y;
-x / y;
-x - y;
-x + y;
+x * y; // ?
+x / y; // ?
+x - y; // ?
+x + y; // ?
 </code></pre>
 
                         <aside class="notes">In addition JavaScript smart! It can figure out what you're trying do some of the time. Take these examples, when trying to perform mathematical operations between numbers and strings. As you'd expect, we would get all the same results as we did previously</aside>
@@ -443,14 +456,14 @@ var a = 'outer';
 function myFunc() {
   var b = 'inner';
 
-  console.log(a);
-  console.log(b);
+  console.log(a); // ?
+  console.log(b); // ?
 }
 
 myFunc();
 
-console.log(a);
-console.log(b);
+console.log(a); // ?
+console.log(b); // ?
 </code></pre>
 
                         <aside class="notes">On of the harder concepts to grasp in JS is their implementations of scopes. So in JS there is function scope. Meaning everything within the function brackets have access to everything declared within the function, and outside. Take this for example.</aside>
@@ -480,17 +493,18 @@ console.log(b); // ERROR
                     <section data-transition="none">
                         <h2>Functions</h2>
 <pre><code data-trim contenteditable>
-var a = 'old value';
+var a = 'old';
 
 function changeValueOfA() {
-  a = 'new value';
+  a = 'new';
   return;
 
   function a() {};
 }
 
+console.log(a); // ?
 changeValueOfA();
-console.log(a);
+console.log(a); // ?
 </code></pre>
 
                         <aside class="notes">So another example. In this case, when we call `changeValueOfA`, since we are manipulating `a` which is in the same scope, we should be able to change the value right?</aside>
@@ -499,17 +513,18 @@ console.log(a);
                     <section data-transition="none">
                         <h2>Functions</h2>
 <pre><code data-trim contenteditable>
-var a = 'old value';
+var a = 'old';
 
 function changeValueOfA() {
-  a = 'new value';
+  a = 'new';
   return;
 
   function a() {};
 }
 
+console.log(a); // 'old'
 changeValueOfA();
-console.log(a); // 'old value'
+console.log(a); // 'old'
 </code></pre>
 
                         <aside class="notes">Nope! So what's actually going on here? Well this is something called variable hoisting. And what's happening, is right before runtime, the JavaScript compiler actually processes this code block like this. Can you see the difference?</aside>
@@ -518,17 +533,18 @@ console.log(a); // 'old value'
                     <section data-transition="none">
                         <h2>Functions</h2>
 <pre><code data-trim contenteditable>
-var a = 'old value';
+var a = 'old';
 
 function changeValueOfA() {
   function a() {};
-  a = 'new value';
+  a = 'new';
 
   return;
 }
 
+console.log(a); // 'old'
 changeValueOfA();
-console.log(a);
+console.log(a); // 'old'
 </code></pre>
 
                         <aside class="notes">The function declaration of `a` is hoisted to the top of the function scope. So now all of a sudden the `a` we thought we were manipulating is now the locally scoped function declaration. And due to the scope concept we were talking about previously, this leaves the outer variable untouched. Problems like this can leave us developers feeling like this.</aside>
@@ -572,12 +588,10 @@ danceBot.dance = function() {
 
 <pre><code data-trim contenteditable>
 function Person(name, age, lovesToDance) {
-  this.name = config.name;
-  this.age = config.age;
-  this.lovesToDance = config.lovesToDance;
+  this.name = name;
+  this.age = age;
+  this.lovesToDance = lovesToDance;
 }
-
-var chris = new Person('Chris', 26, true);
 </code></pre>
                         <aside class="notes">JavaScript is also an Object Oriented language, so we can create instances of objects like this. Declaring a constructor as a function, and assigning properties to the instance with the `this` keyword. So in this example, we have a function named Person. To create an instance, we just need the `new` keyword before the function, and JavaScript knows to return an object.</aside>
                     </section>
@@ -605,6 +619,7 @@ arr.length; // ?
 
 arr.push('mouse');
 arr.length; // ?
+arr[1]; // ?
 </code></pre>
                         <aside class="notes">You can assign values to the array like this. So predefining values into the array on declaration. And then pushing values to the stack using the `push` function. So the lengths for these two lines would be?</aside>
                     </section>
@@ -618,6 +633,7 @@ arr.length; // 3
 
 arr.push('mouse');
 arr.length; // 4
+arr[1]; // 'cat'
 </code></pre>
                         <aside class="notes">3 and 4. Yep!</aside>
                     </section>
@@ -629,7 +645,7 @@ arr.length; // 4
 var arr = ['dog', 'cat', 'hen'];
 
 arr[100] = 'mouse';
-arr.length;
+arr.length; // ?
 </code></pre>
                         <aside class="notes">How about if I do this? What should happen?</aside>
                     </section>
