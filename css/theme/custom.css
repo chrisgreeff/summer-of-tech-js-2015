@@ -1,4 +1,4 @@
-@import url(../../lib/font/ammsterdam-graffiti/ammsterdam-graffiti.css);
+@import url(../../lib/font/punk-kid/punk kid.css);
 /**
  * Black theme for reveal.js. This is the opposite of the 'white' theme.
  *
@@ -15,7 +15,7 @@ body {
   background-color: #212121; }
 
 .reveal {
-  font-family: 'Amsterdam Graffiti', Helvetica, sans-serif;
+  font-family: 'Punk Kid';
   font-size: 45px;
   font-weight: normal;
   color: #e6e6e6; }
@@ -35,7 +35,7 @@ body {
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   margin: 0 0 20px 0;
   color: #e6e6e6;
-  font-family: 'Amsterdam Graffiti', Helvetica, sans-serif;
+  font-family: 'Punk Kid';
   font-weight: 300;
   line-height: 1.2;
   letter-spacing: normal;

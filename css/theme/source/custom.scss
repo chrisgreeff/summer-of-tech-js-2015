@@ -12,7 +12,9 @@
 
 
 // Include theme-specific fonts
-@import url(../../lib/font/ammsterdam-graffiti/ammsterdam-graffiti.css);
+//@import url(../../lib/font/amsterdam-graffiti/amsterdam-graffiti.css);
+//@import url(../../lib/font/thin-mint/Jeff Levine - Thin Mint JNL.css);
+@import url(../../lib/font/punk-kid/punk kid.css);
 
 
 // Override theme settings (see ../template/settings.scss)
@@ -22,8 +24,8 @@ $mainColor: #e6e6e6;
 $headingColor: #e6e6e6;
 
 $mainFontSize: 45px;
-$mainFont: 'Amsterdam Graffiti', Helvetica, sans-serif;
-$headingFont: 'Amsterdam Graffiti', Helvetica, sans-serif;
+$mainFont: 'Punk Kid';
+$headingFont: 'Punk Kid';
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
