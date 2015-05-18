@@ -27,6 +27,7 @@ To launch the presentation.
 - [GitHub](github.com): Source Management Repository
 
 ## Learn More
+- [A re-introduction to JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
 - [How to keep up to date on Front-End Technologies](http://uptodate.frontendrescue.org/)
 - [WAT](https://www.destroyallsoftware.com/talks/wat)
 - [The Birth and Death of JavaScript](https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript)
