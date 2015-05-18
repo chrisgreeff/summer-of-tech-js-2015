@@ -35,7 +35,7 @@ body {
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   margin: 0 0 20px 0;
   color: #e6e6e6;
-  font-family: 'Punk Kid';
+  font-family: 'Thin Mint';
   font-weight: 300;
   line-height: 1.2;
   letter-spacing: normal;
@@ -259,3 +259,6 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: #42affa; }
+
+.underdog h1, .underdog h2 {
+  font-family: 'Punk Kid'; }

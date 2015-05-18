@@ -25,7 +25,7 @@ $headingColor: #e6e6e6;
 
 $mainFontSize: 45px;
 $mainFont: 'Punk Kid';
-$headingFont: 'Punk Kid';
+$headingFont: 'Thin Mint';
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
@@ -45,7 +45,11 @@ section.has-light-background {
     }
 }
 
-
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.underdog h1,
+.underdog h2 {
+    font-family: 'Punk Kid';
+}
