@@ -25,7 +25,7 @@ $headingColor: #e6e6e6;
 
 $mainFontSize: 45px;
 $mainFont: 'Thin Mint';
-$headingFont: 'Thin Mint';
+$headingFont: 'Space Punk';
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
@@ -52,4 +52,19 @@ section.has-light-background {
 .underdog h1,
 .underdog h2 {
     font-family: 'Punk Kid';
+}
+
+.reveal img.vend-logo {
+    border: none;
+    width: 300px;
+    margin-bottom: 150px;
+}
+
+.reveal .about-section {
+    display: flex !important;
+
+    .about-left {
+    }
+    .about-right {
+    }
 }

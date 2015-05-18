@@ -35,7 +35,7 @@ body {
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   margin: 0 0 20px 0;
   color: #e6e6e6;
-  font-family: 'Thin Mint';
+  font-family: 'Space Punk';
   font-weight: 300;
   line-height: 1.2;
   letter-spacing: normal;
@@ -262,3 +262,11 @@ body {
 
 .underdog h1, .underdog h2 {
   font-family: 'Punk Kid'; }
+
+.reveal img.vend-logo {
+  border: none;
+  width: 300px;
+  margin-bottom: 150px; }
+
+.reveal .about-section {
+  display: flex !important; }
