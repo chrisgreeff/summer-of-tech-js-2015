@@ -370,7 +370,7 @@ var str2 = ' World!';
 
 str1 + str2; // ?
 str1.length; // ?
-str2.substring(0, 2); // ?
+str2.substring(1, 4); // ?
 </code></pre>
 
                     <aside class="notes">OK lets take a look at strings. So here we have two strings declared, and we can perform some operations on them, like concatenation, find the length, or extract a substring within another string.</aside>
@@ -438,9 +438,6 @@ function dance() {
 var double function(x) {
   return x * 2;
 };
-
-dance(); // 'Boogie boogie!'
-double(16); // 32
 </code></pre>
                         <aside class="notes">Ok, now lets move onto functions. There are 2 ways to create functions. Firstly with the keyword function and then the name. Or assigning it to a `var`. Invoking the function is similar to how you would in most languages, with brackets, and the params passed in.</aside>
                     </section>
@@ -496,6 +493,44 @@ function changeValueOfA() {
   a = 'new';
   return;
 
+
+}
+
+console.log(a); // ?
+changeValueOfA();
+console.log(a); // ?
+</code></pre>
+
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Functions</h2>
+<pre><code data-trim contenteditable>
+var a = 'old';
+
+function changeValueOfA() {
+  a = 'new';
+  return;
+
+
+}
+
+console.log(a); // 'old'
+changeValueOfA();
+console.log(a); // 'new'
+</code></pre>
+
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Functions</h2>
+<pre><code data-trim contenteditable>
+var a = 'old';
+
+function changeValueOfA() {
+  a = 'new';
+  return;
+
   function a() {};
 }
 
@@ -516,7 +551,7 @@ function changeValueOfA() {
   a = 'new';
   return;
 
-  function a() {};
+  var a;
 }
 
 console.log(a); // 'old'
@@ -533,7 +568,7 @@ console.log(a); // 'old'
 var a = 'old';
 
 function changeValueOfA() {
-  function a() {};
+  var a;
   a = 'new';
 
   return;
@@ -570,11 +605,11 @@ var obj = new Object();
 <pre><code data-trim contenteditable>
 var danceBot = {
   name: 'DanceBot',
-  'version': 5000
+  'my version': 5000
 };
 
 danceBot.dance = function() {
-  console.log('Boogie boogie boogie, all night long!')
+  console.log('Boogie boogie, get down tonight!')
 };
 </code></pre>
                         <aside class="notes">So here, I am declaring an object, with predefined properties of any type, strings, booleans, whatever. And I can also add properties at anytime bu just assigning it. So here I am assigning a function.</aside>
@@ -612,27 +647,13 @@ var arr = new Array();
 
 <pre><code data-trim contenteditable>
 var arr = ['dog', 'cat', 'hen'];
-arr.length; // ?
-
-arr.push('mouse');
-arr.length; // ?
-arr[1]; // ?
-</code></pre>
-                        <aside class="notes">You can assign values to the array like this. So predefining values into the array on declaration. And then pushing values to the stack using the `push` function. So the lengths for these two lines would be?</aside>
-                    </section>
-
-                    <section data-transition="none">
-                        <h2>Arrays</h2>
-
-<pre><code data-trim contenteditable>
-var arr = ['dog', 'cat', 'hen'];
 arr.length; // 3
 
 arr.push('mouse');
 arr.length; // 4
 arr[1]; // 'cat'
 </code></pre>
-                        <aside class="notes">3 and 4. Yep!</aside>
+                        <aside class="notes">You can assign values to the array like this. So predefining values into the array on declaration. And then pushing values to the stack using the `push` function.</aside>
                     </section>
 
                     <section data-transition="none">
