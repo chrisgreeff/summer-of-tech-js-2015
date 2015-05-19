@@ -64,10 +64,22 @@ section.has-light-background {
     border: none;
     background: none;
 }
-
 .reveal .about-section {
     display: -webkit-flex !important;
     display: flex !important;
+}
+.reveal .cylon-platform-grid {
+    display: -webkit-flex !important;
+    display: flex !important;
+}
+.reveal .cylon-platform-grid-container {
+    display: -webkit-flex !important;
+    display: flex !important;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 900px;
 }
 
 /**
