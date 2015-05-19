@@ -368,26 +368,12 @@ z.toFixed(2); // '5.52'
 var str1 = 'Hello';
 var str2 = ' World!';
 
-str1 + str2; // ?
-str1.length; // ?
-str2.substring(1, 4); // ?
+str1 + str2; // 'Hello World!'
+str1.length; // 5
+str2.substring(1, 4); // 'Wor'
 </code></pre>
 
                     <aside class="notes">OK lets take a look at strings. So here we have two strings declared, and we can perform some operations on them, like concatenation, find the length, or extract a substring within another string.</aside>
-                    </section>
-
-                    <section data-transition="none">
-                        <h2>Strings</h2>
-<pre><code data-trim contenteditable>
-var str1 = 'Hello';
-var str2 = ' World!';
-
-str1 + str2; // 'Hello World!'
-str1.length; // 5
-str2.substring(1, 4); // 'Wol'
-</code></pre>
-
-                    <aside class="notes">Giving us just as you'd expect "Hello World!", 5 for the length, and "Wol" when sub-stringing</aside>
                     </section>
 
                     <section data-transition="none">
@@ -528,10 +514,50 @@ console.log(a); // 'new'
 var a = 'old';
 
 function changeValueOfA() {
+  var a = 'new';
+  return;
+
+
+}
+
+console.log(a); // ?
+changeValueOfA();
+console.log(a); // ?
+</code></pre>
+
+                        <aside class="notes">What if I do this?</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Functions</h2>
+<pre><code data-trim contenteditable>
+var a = 'old';
+
+function changeValueOfA() {
+  var a = 'new';
+  return;
+
+
+}
+
+console.log(a); // 'old'
+changeValueOfA();
+console.log(a); // 'old'
+</code></pre>
+
+                        <aside class="notes">The outer value is untouched</aside>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Functions</h2>
+<pre><code data-trim contenteditable>
+var a = 'old';
+
+function changeValueOfA() {
   a = 'new';
   return;
 
-  function a() {};
+  var a;
 }
 
 console.log(a); // ?
