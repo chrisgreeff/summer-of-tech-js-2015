@@ -1,0 +1,179 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * Copyright (C) 2015 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+//@import url(../../lib/font/amsterdam-graffiti/amsterdam-graffiti.css);
+//@import url(../../lib/font/thin-mint/Jeff Levine - Thin Mint JNL.css);
+@import url(../../lib/font/punk-kid/punk kid.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #212121;
+
+$mainColor: #e6e6e6;
+$headingColor: #e6e6e6;
+
+$mainFontSize: 45px;
+$mainFont: 'Thin Mint';
+$headingFont: 'Space Punk';
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 300;
+$linkColor: #42affa;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-light-background {
+    &, h1, h2, h3, h4, h5, h6 {
+        color: #222;
+    }
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.underdog h1,
+.underdog h2 {
+    font-family: 'Punk Kid';
+}
+
+.reveal img.vend-logo {
+    border: none;
+    width: 300px;
+    margin-bottom: 150px;
+}
+.reveal img.meetup,
+.reveal img.simple {
+    border: none;
+    background: none;
+}
+.reveal .about-section {
+    display: -webkit-flex !important;
+    display: flex !important;
+}
+.reveal .cylon-platform-grid {
+    display: -webkit-flex !important;
+    display: flex !important;
+}
+.reveal .cylon-platform-grid-container {
+    display: -webkit-flex !important;
+    display: flex !important;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 900px;
+}
+
+/**
+ * SPINNING GLOBE IN CSS TAKEN FROM http://codepen.io/designil/pen/HGvcE
+ */
+@keyframes mapfront_spin {
+  0% {
+    background-position: 1400px 0%;
+  }
+  100% {
+    background-position: 0 0%;
+  }
+}
+
+@keyframes mapback_spin {
+  0% {
+    background-position: 0 0%;
+  }
+  100% {
+    background-position: 1400px 0%;
+  }
+}
+
+@-webkit-keyframes mapfront_spin {
+  0% {
+    background-position: 1400px 0%;
+  }
+  100% {
+    background-position: 0 0%;
+  }
+}
+
+@-webkit-keyframes mapback_spin {
+  0% {
+    background-position: 0 0%;
+  }
+  100% {
+    background-position: 1400px 0%;
+  }
+}
+
+.reveal .globe-slide {
+    display: -webkit-flex !important;
+    display: flex !important;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+}
+
+.globe {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.front {
+  width: 400px;
+  height: 400px;
+  background: url(../../../images/SphereForeground.png);
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.back {
+  width: 400px;
+  height: 400px;
+  background: url(../../../images/SphereBackground.png);
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mapfront, .mapback {
+  border-radius: 300px;
+  width: 340px;
+  height: 340px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 4;
+}
+
+.mapfront {
+  background: url(../../../images/CartoForeground.png) repeat-x;
+  -webkit-animation: mapfront_spin 15s linear infinite;
+  animation: mapfront_spin 15s linear infinite;
+}
+
+.mapback {
+  background: url(../../../images/CartoBackground.png) repeat-x;
+  position: absolute;
+  -webkit-animation: mapback_spin 15s linear infinite;
+  animation: mapback_spin 15s linear infinite;
+}

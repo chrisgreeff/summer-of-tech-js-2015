@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Summer of Tech - JS</title>
+        <title>JavaScript</title>
 
         <meta name="description" content="Why JavaScript is Awesome">
         <meta name="author" content="Sarah Hui and Chris Greeff">
@@ -15,7 +15,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
         <link rel="stylesheet" href="css/reveal.css">
-        <link rel="stylesheet" href="css/theme/league.css" id="theme">
+
+        <link rel="stylesheet" href="css/theme/custom.css" id="theme">
 
         <!-- Code syntax highlighting -->
         <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -36,44 +37,71 @@
     <body>
         <div class="reveal">
             <div class="slides">
+
+            <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                                        INTRO
+             +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+                <!-- +++ The Story +++ -->
                 <section>
-                    <h1>Summer of Tech</h1>
-                    <h3>JavaScript</h3>
+                    <section>
+                        <h4>Welcome to the Summer of Tech 2O15</h4>
+                        <h1>JavaScript Masterclass</h1>
+                        <aside class="notes">
+                            <p>Welcome to the Summer of Tech 2015, JavaScript Masterclass. Or as we have dubbed it...</p>
+                        </aside>
+                    </section>
+
+                    <section class="underdog">
+                        <h1>JavaScript</h1>
+                        <h2>An underdog story.</h2>
+                        <aside class="notes">
+                            <p>JavaScript. An underdog story.</p>
+                            <p>Today, you are going to learn what JavaScript is.</p>
+                            <p>Where it came from. It's humble roots as a teased under-appreciated language.</p>
+                            <p>To today, where JavaScript is taking over the world in more ways than one.</p>
+                        </aside>
+                    </section>
+                    <section class="underdog">
+                        <h1>JavaScript</h1>
+                        <h2>An underdog story.</h2>
+                        <h3>Part 1 - History &amp; the language</h3>
+                        <h3>Part 2 - Demo's &amp; today</h3>
+                        <aside class="notes">
+                            <p>We will start with history &amp; language.</p>
+                            <p>And finish by demonstrating the power &amp; versatility of JavaScript today.</p>
+                            <p>It's going to be exciting and there will be quizzes so listen up!</p>
+                        </aside>
+                    </section>
                 </section>
 
-                <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-                                                            INTRO
-                 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-
+                <!-- +++ Who are we? +++ -->
                 <section>
-                    <section data-background="./images/vend-fam.jpg">
-                        <aside class="notes">Hey guys, I'm Chris and this is Sarah, and we work for a small start up called Vend.</aside>
-                    </section>
-
-                    <section>
-                        ADD MORE IMAGES ON WEBREGISTER AND ECOMMERCE
-                    </section>
-
-                    <section>
-                        <h2>2011</h2>
-                        <img src="./images/vend-fam-christmas1.jpg">
-                        <p>8 people</p>
-                    </section>
-
-                    <section>
-                        <h2>2012</h2>
-                        <img src="./images/vend-fam-christmas2.jpg">
-                        <p>31 people</p>
-                    </section>
-
-                    <section>
-                        <h2>2013</h2>
-                        <img src="./images/vend-fam-christmas3.jpg">
-                        <p>~170 people world wide</p>
+                    <section class="about-section">
+                        <div class="about-left underdog">
+                            <h2>Chris Greeff</h2>
+                            <img src="./images/chris.jpg">
+                            <h3>@greevz</h3>
+                        </div>
+                        <div class="about-right underdog">
+                            <h2>Sarah Hui</h2>
+                            <img src="./images/sarah.jpg">
+                            <h3>@sehsarah</h3>
+                        </div>
+                        <aside class="notes">
+                            <p>So anyway, who are we?</p>
+                            <p>I'm Chris &amp; this is Sarah. We're lead engineers at Vend's HQ in Auckland.</p>
+                        </aside>
                     </section>
 
                     <section data-background="./images/vend-fam-christmas4.jpg">
-                        <aside class="notes">Heres a photo of the New Zealand team at our last Christmas party. You can kind of see me and Sarah here.</aside>
+                        <img src="./data/vend-standard-green-web-large-347.png" class="vend-logo">
+                        <aside class="notes">
+                            <p>We have grown from being just 20 people sitting in one room 3 years ago when Sarah started</p>
+                            <p>To about 250 people around the world in 6 offices today</p>
+                            <p>Here's a photo of the New Zealand team at our last Christmas party.</p>
+                            <p>You can kind of see me and Sarah here.</p>
+                        </aside>
                     </section>
 
                     <section data-background="./images/vend-fam-christmas4.jpg" data-transition="none">
@@ -88,18 +116,22 @@
                         <img src="./images/html5.png" style="height: 300px">
                         <img src="./images/css3.png" style="height: 300px">
                         <img src="./images/js.png" style="height: 300px">
-                        <aside class="notes">So aside from part time modeling, me and Sarah spend our days working with HTML, CSS and JavaScript, helping Vend build beautiful web applications that retailers love to use. So we've been asked to give you guys an overview about this one, so I thought the best place to start would be the beginning</aside>
+                        <aside class="notes">
+                            <p>So aside from part time modeling...</p>
+                            <p>As front end engineers we spend our days working with HTML, CSS and JavaScript, helping Vend build beautiful web applications that retailers love to use.</p>
+                            <p>We will talk more about what we do at Vend later on.</p>
+                            <p>(next slide) Today we are here to talk to you about JavaScript. So I thought the best place to start would be the beginning.</aside>
                     </section>
                 </section>
 
                 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                                                             HISTORY
                  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
                 <section>
                     <section>
                         <img src="./images/js.png">
-
-                        <aside class="notes">Ok So me and Sarah have been asked to give you an overview of JavaScript, so I thought the best place to start would be the beginning.</aside>
+                        <aside class="notes">Today we are here to talk to you about JavaScript. So I thought the best place to start would be the beginning.</aside>
                     </section>
 
                     <section>
@@ -167,22 +199,19 @@
                  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
                 <section>
-                    <section>
-                        <h2>The Language</h2>
-
+                    <section class="underdog">
+                        <h1>The Language</h1>
                         <ul>
                             <li>Object-oriented scripting language</li>
                             <li>Has standard object libraries (<code>Math, Date</code>)</li>
                             <li>Both client-side (Browser) and server-side (NodeJS)</li>
                         </ul>
-
                         <aside class="notes">Now before I start, are there any here that has some JavaScript experience? If you have, you probably know some if this already, so I'd ask you, if you know the answers to give the others here a fighting chance.</aside>
                     </section>
 
                     <section>
                         <h2>Types</h2>
-
-                        <table>
+                        <table style="font-size: 32px;">
                             <thead>
                                 <tr>
                                     <th style="text-align: center;">Type</th>
@@ -691,21 +720,639 @@ arr.length; // 101
                                                             SARAH
                  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
 
+                <!-- JS in the World -->
                 <section>
-                    <h2>Community</h2>
+                    <section class="underdog globe-slide">
+                        <h1>The world of JavaScript</h1>
+                        <div class="globe">
+                            <div class="front"></div>
+                            <div class="mapfront"></div>
+                            <div class="mapback"></div>
+                            <div class="back"></div>
+                        </div>
+                        <aside class="notes">
+                            <p>Now that Chris has covered the language itself and some of it's quirks and coolness</p>
+                            <p>Let's have a look at JavaScript in the big wide world.</p>
+                        </aside>
+                    </section>
+                    <section data-background="./images/facebook.png">
+                        <aside class="notes">
+                            <p>We're going to run a bit of a quiz.</p>
+                            <p>Raise your hand if you think the apps in the following slides use JavaScript.</p>
+                            <p>Facebook Web</p>
+                        </aside>
+                    </section>
+                    <section class="underdog">
+                        <h1>Yes.</h1>
+                        <aside class="notes">
+                            <p>Yes.</p>
+                        </aside>
+                    </section>
+                    <section data-background="./images/dropbox.png">
+                        <aside class="notes">
+                            <p>Dropbox</p>
+                        </aside>
+                    </section>
+                    <section class="underdog">
+                        <h1>Yes.</h1>
+                        <aside class="notes">
+                            <p>Yes.</p>
+                        </aside>
+                    </section>
+                    <section data-background="./images/instagram.png">
+                        <aside class="notes">
+                            <p>Instagram.</p>
+                        </aside>
+                    </section>
+                    <section class="underdog">
+                        <h1>Ish.</h1>
+                        <aside class="notes">
+                            <p>Ish. This one is a bit of a trick question. Their web app yes uses JavaScript.</p>
+                            <p>And for ages their mobile app was a wrapped web app that used JavaScript!</p>
+                            <p>But it has since been replaced with a native app.</p>
+                        </aside>
+                    </section>
+                    <section data-background="./images/google.png">
+                        <aside class="notes">
+                            <p>Google? Gmail?</p>
+                        </aside>
+                    </section>
+                    <section class="underdog">
+                        <h1>Yes.</h1>
+                        <aside class="notes">
+                            <p>Yes.</p>
+                        </aside>
+                    </section>
+                    <section data-background="./images/goon.gif" data-background-size="600px" data-background-repeat="repeat">
+                        <aside class="notes">
+                            <p>And really this list could go on. Because pretty much everything you use on the web everyday.</p>
+                            <p>All using JavaScript</p>
+                        </aside>
+                    </section>
                 </section>
 
+                <!-- Community -->
                 <section>
-                    <h2>Atwoods Law</h2>
+                    <section data-background="./Data/moshed_2015-3-22_21.54.56-501.gif" class="underdog">
+                        <h1 style="background-color: #212121;">Community</h1>
+                        <aside class="notes">
+                            <p>JavaScript is the language of the web.</p>
+                            <p>This means our community is the community of the web too.</p>
+                            <p>Which is awesome!</p>
+                        </aside>
+                    </section>
+                    <section data-background="./images/twitter.png">
+                        <aside class="notes">
+                            <p>Twitter</p>
+                            <p>So yes this is another example of a popular tool built with JavaScript<p>
+                            <p>But it is also a tool used heavily by our community</p>
+                        </aside>
+                    </section>
+                    <section>
+                        <img src="./images/twitter-logo.png" style="background: none; border: none;">
+                        <aside class="notes">
+                            <p>You can find heaps of useful information; interesting developers, designers &amp; events to follow; &amp; really engage with the industry on here.</p>
+                            <p>Using it as a tool to follow interesting topics &amp; favorite stuff without saying much is totally cool</p>
+                            <p>It's also a great platform to share things you create.</p>
+                        </aside>
+                    </section>
+                    <section data-background="./images/twitter-logo.png" data-background-size="1000px" >
+                        <p style="background-color: #212121; font-size: 100px;">#summeroftech</p>
+                        <p style="background-color: #212121; font-size: 100px;">#JSunderdogstory</p>
+                        <aside class="notes">
+                            <p>These are the hashtags we've been using for this event.<p>
+                            <p>By tagging your tweets from today with these, we can then follow a stream of conversation about the presso &amp; the event.<p>
+                        </aside>
+                    </section>
                 </section>
 
+                <!-- Community: Meetups & Conferences -->
                 <section>
-                    <h2>Examples/Demos</h2>
+                    <section data-background="./Data/moshed_2015-3-22_21.52.9-471.gif" class="underdog">
+                        <h2 style="background-color: #212121;">Meetups &amp; Conferences</h2>
+                        <aside class="notes">
+                            <p>This is used a lot for industry events. Like meetups &amp; conferences.</p>
+                            <p>Meetups are a great way to share and find out what other JavaScript developers in your city are up to.</p>
+                            <p>We run a bunch in Auckland</p>
+                        </aside>
+                    </section>
+                    <section>
+                        <img src="./images/akjs.png" class="meetup">
+                    </section>
+                    <section>
+                        <img src="./images/aknodejs.png" class="meetup">
+                    </section>
+                    <section>
+                        <img src="./images/akweb.png" class="meetup">
+                    </section>
+                    <section>
+                        <img src="./images/akwebdev.png" class="meetup">
+                    </section>
+                    <section>
+                        <img src="./images/gathergather.png" class="meetup">
+                        <aside class="notes">
+                            <p>There are also a bunch of sweet conferences in Auckland too. And our buddy city Wellington. There's a buzzing web community there too.</p>
+                            <p>This is a conference I think you guys would probably enjoy held in Auckland called Gather.</p>
+                            <p>These kind of collaboration events are a big part of our highly engaged JavaScript community</p>
+                        </aside>
+                    </section>
+                    <section class="globe-slide">
+                        <div class="globe">
+                            <div class="front"></div>
+                            <div class="mapfront"></div>
+                            <div class="mapback"></div>
+                            <div class="back"></div>
+                        </div>
+                        <aside class="notes">
+                            <p>Working at Vend our engineers also get the chance to travel the world attending conferences &amp; events like these in different cities</p>
+                            <p>Last year Chris attended JSConf in Berlin and bought a ton of interesting information &amp; inspiration back to the team.</p>
+                            <p>And I presented at FullStack in London &amp; attended XOXO festival in Portland, Oregon. Where I met a ton of industry leaders who I talked to about Vend &amp; code &amp; it was amazing.</p>
+                            <p>To be a high performing team of engineers, we believe it's important to be out there getting involved, sharing &amp; learning from each other</p>
+                            <p>Start in your own city and on the web. And then you can expand to the world</p>
+                        </aside>
+                    </section>
                 </section>
 
+                <!-- Github & Sharing & Creating -->
                 <section>
-                    <h2>Links and Resources</h2>
+                    <section data-background="./images/sarah-github.png">
+                        <aside class="notes">
+                            <p>Another tool we use heavily in our community is Github. I hope you are all familiar with this and Git version control.</p>
+
+                            <p>If you haven't got your own GitHub account, I recommend one outcome from today to be to go and create one.<p>
+                            <p>Artists have sketchbooks. As developers, this is our version.</p>
+                            <p>Any little idea you have, tinker with it a bit, push it up, let others check it out, come back to it later, it might go somewhere.</p>
+
+                            <p>This is my GitHub account.</p>
+                            <p>I have a few projects up there. I definitely want to add more and make more time to do open source development.</p>
+                            <p>It took me a while to start getting involved this way. But the benefits of it I can't emphasise enough.</p>
+                            <p>You just have to get over the first hurdle. Starting</p>
+                        </aside>
+                    </section>
+                    <section data-background="./Data/rainbow1.png">
+                        <h2 style="background-color: #212121;">Starting, Creating &amp; Sharing</h2>
+                        <aside class="notes">
+                            <p>Starting things is hard</p>
+                            <p>Putting things out there is hard</p>
+                            <p>After getting over this initial fear though, you realise; The web is ours to fill.</p>
+                            <p>It doesn't matter if the code is not perfect.</p>
+                            <p>Sharing and improving on each others ideas &amp; learning together is a big part of our community on the web</p>
+                            <p>Achieving something useless can sometimes be the best thing ever! It’s not always so serious!!!!</p>
+                            <p>So try to start tinkering and sharing things. This will definitely help you stand out from the crowd when it comes to the job market.</p>
+                            <p>It's also where heaps of the fun is!</p>
+                        </aside>
+                    </section>
+                    <section data-background="./Data/serious.png">
+                        <h2 style="background-color: #212121; margin-top: 500px;">Starting, Creating &amp; Sharing</h2>
+                        <aside class="notes">
+                            <p>PSA</p>
+                            <p>Next time, instead of marathon'ing Made in Chelsea or Game of Thrones. Maybe use that spare time to tinker with a JavaScript project!</p> 
+                        </aside>
+                    </section>
+                    <section data-background="./Data/ftfojs_1.gif">
+                        <img src="./images/ftfojs.png">
+                        <aside class="notes">
+                            <p>Inside &amp; outside of work Chris &amp; I, &amp; many our colleagues play with code &amp; tinker on projects.</p>
+                            <p>Using myself as an example, I'm going to give you a a mashup of the projects I've been doing and looking into, for the fun of it.</p>
+                            <p>Hopefully it will give you some insight into what kind of array of creations you can make with JavaScript</p>
+                        </aside>
+                    </section>
                 </section>
+
+                <!-- Atwoods Law -->
+                <section data-background="./Data/ftfojs_1.gif">
+                    <div style="background-color: #212121;">
+                        <h2>Atwoods Law</h2>
+                        <p>“Anything that can be written in JavaScript, will eventually be written in JavaScript”</p>
+                        <p>- @codinghorror</p>
+                    </div>
+                    <aside class="notes">
+                        <p>Atwoods law states Anything that can be written in JS will eventually be written in JS.</p>
+                        <p>This pretty much describes the fascinating advancements in JS over the past few years.</p>
+                        <p>Once such area of advancement is Robots</p>
+                    </aside>
+                </section>
+
+                <!-- Robots -->
+                <section>
+                    <section data-background-video="./Data/robots.m4v">
+                        <aside class="notes">
+                            <p>Robots</p>
+                        </aside>
+                    </section>
+                    <section data-background-video="./Data/nodebots.m4v" >
+                        <aside class="notes">
+                            <p>Nodebots</p>
+                        </aside>
+                    </section>
+                    <section data-background-video="./Data/shubot.m4v">
+                        <aside class="notes">
+                            <p>Shubot</p>
+                            <p>As you can see Shubot is a little tank that delivers drinks around the office</p>
+                            <p>(well as long as you follow her around with an iPad or whatever, but yeah)</p>
+                            <p>Through the Shubot project I learnt so much!</p>
+                            <p>And yes! Shubot is controlled via JavaScript.</p>
+                        </aside>
+                    </section>
+                    <section data-background="./Data/johnny.png">
+                        <h2 style="background-color: #212121; margin-top: 300px;">johnny-five.js</h2>
+                        <aside class="notes">
+                            <p>johnny-five.js</p>
+                            <p>Or more specifically this project from Rick Waldron, called johnny-five.js</p>
+                            <p>It provides a framework you can use to write a JavaScript program that sends commands to an Arduino</p>
+                        </aside>
+                    </section>
+                    <section data-background-video="./Data/arduino.m4v">
+                        <h2 style="background-color: #212121; margin-top: 500px;">Arduino</h2>
+                        <aside class="notes">
+                            <p>This is the hardware that runs shubots motors &amp; that you can control with johnny-five.js</p>
+                            <p>There's also a bunch of other JavaScript related things like web sockets &amp; a simple node.js server that I used for this project too</p>
+                            <p>More info is up on GitHub</p>
+                        </aside>
+                    </section>
+                </section>
+
+                <!-- What's Open Source -->
+                <section>
+                    <section data-background="./Data/pine.png" data-background-size="600px" data-background-repeat="repeat">
+                        <h2 style="background-color: #212121;">Open Source</h2>
+                        <aside class="notes">
+                            <p>So I've been mentioning this phrase quite a bit. Open source. What does this mean?</p>
+                        </aside>
+                    </section>
+                    <section data-background="./Data/pine.png" data-background-size="600px" data-background-repeat="repeat">
+                        <img src="./images/open-source.png" class="simple">
+                        <aside class="notes">
+                            <p>To paraphrase the google definition.</p>
+                        </aside>
+                    </section>
+                    <section data-background="./Data/pine.png" data-background-size="600px" data-background-repeat="repeat">
+                        <h2 style="background-color: #212121;">Open Source</h2>
+                        <div style="background-color: #212121;">
+                            <p>Software for which the source code</p>
+                            <p>is made <span style="color: pink;">freely available</span></p>
+                            <p>and may be <span style="color: pink;">redistributed</span> or <span style="color: pink;">modified</span></p>
+                        </div>
+                        <aside class="notes">
+                            <p>It basically means software for which the source code is made freely available and may be redistributed or modified.</p>
+                            <p>So open source code. You write something. You put it out there for the world to take and use as they see fit.</p>
+                            <p>This has played a huge part in the advancement of JavaScript &amp; is a big part of the community and culture that we have created</p>
+                        </aside>
+                    </section>
+                </section>
+
+                <!-- More Robots -->
+                <section>
+                    <section data-background="./Data/smoke.png">
+                        <div style="background-color: #212121; font-size: 200px;">HARDware</div>
+                        <aside class="notes">
+                            <p>Back to the demos!</p>
+                            <p>As mentioned Shubot was a Hardware project.</p>
+                            <p>This was super fun but also quite a challenging project for me, throwing hardware into the mix</p>
+                            <p>There are lots more factors to consider when debugging, that you don't have to worry about with software.</p>
+                            <p>It might not be the line of code you changed that stopped it working, it could just be out of battery</p>
+                            <p>I like challenging myself so I got pretty interested in this whole JavaScript hardware space and carrying on from Shubot I soon…</p>
+                            </p>
+                        </aside>
+                    </section>
+                    <section class="underdog" data-background="./Data/smoke.png">
+                        <h1 style="background-color: #212121;">Cylon.js</h1>
+                        <img src="./Data/cylon-site.png" class="simple">
+                        <aside class="notes">
+                            <p>I soon heard about Cylon.js &amp; I have been really loving this library</p>
+                            <p>Again all open source. Yet in this case, the hybrid group has people working on it full time.</p>
+                        </aside>
+                    </section>
+                    <section class="underdog" data-background="./Data/smoke.png">
+                        <h1 style="background-color: #212121;">Cylon.js</h1>
+                        <div class="cylon-platform-grid-container">
+                            <div class="cylon-platform-grid">
+                                <img src="./Data/pasted-image-1909.png" class="simple">
+                                <img src="./Data/pasted-image-1852.png" class="simple">
+                                <img src="./Data/pasted-image-1864.png" class="simple">
+                                <img src="./Data/pasted-image-1872.png" class="simple">
+                            </div>
+                            <div class="cylon-platform-grid">
+                                <img src="./Data/pasted-image-1929.png" class="simple">
+                                <img src="./Data/pasted-image-1901.png" class="simple">
+                                <img src="./Data/pasted-image-2272.png" class="simple">
+                                <img src="./Data/pasted-image-2263.png" class="simple">
+                            </div>
+                            <div class="cylon-platform-grid">
+                                <img src="./Data/pasted-image-2237.png" class="simple">
+                                <img src="./Data/pasted-image-2222.png" class="simple">
+                                <img src="./Data/pasted-image-2216.png" class="simple">
+                                <img src="./Data/pasted-image-1938.png" class="simple">
+                            </div>
+                        </div>
+                        <aside class="notes">
+                            <p>You can use it to control arduino’s like we talked about with johnny-five.js as well as all these existing platforms like the </p>
+                            <p>The Neurosky - brain sensor thing; The pebble watch; Keyboards; Command line speech tools;</p>
+                            <p>The nest; Those smart lightbulbs And it’s growing</p>
+                            <p>One of my favourite bots that i’ve created with this is</p>
+                        </aside>
+                    </section>
+                    <section data-background-video="./Data/blingbot.mp4">
+                        <aside class="notes">
+                            <p> DEMOO </p>
+                            <p>Blingbot, the sparkly AR.Drone</p>
+                            <p>It also produces a video stream all programmed through javascript using the cylon module for open CV , open computer vision library</p>
+                        </aside>
+                    </section>
+                    <section data-background-image="./Data/blingbot.jpg">
+                        <aside class="notes">
+                            <p>You couldn’t really see in the vid so here’s a closeup of the bejewledness</p>
+                            <p>My other favourite bot I created recently uses a sphero, a leap motion, and the web audio API</p>
+                        </aside>
+                    </section>
+                    <section data-background-video="./Data/boogiebot.mp4">
+                        <aside class="notes">
+                            <p>I’ve named it boogie bot and it dances to Beyoncé</p>
+                            <p>Again, let me emphasise, all of this stuff is programmed using JavaScript!</p>
+                            <!-- during video -->
+                            <p>shake to connect to bluetooth</p>
+                            <p>bluetooth is a real pain actually which is one of the reasons i’m showing you a vid instead of live</p>
+                            <p>It uses music data from the audio element to create a bit of a boggie</p>
+                            <p>I added song changes via leap motion to spice it up a bit</p>
+                            <p>i pause it a couple times to show: when there’s no music data being received the sphero just stops</p>
+                            <p>Usually Cylon is run via the command line, but you can also run it through the browser which is cool.</p>
+                            <p>For this program I actually use a full on chrome app instead of a straight web page, in order to allow connections via bluetooth</p>
+                            <p>Boogie bot was really fun and i became really enthralled by this audio reactive visuals idea using the web audio API</p>
+                        </aside>
+                    </section>
+                </section>
+
+                <!-- Web Audio & Web GL -->
+                <section>
+                    <section data-background-video="./Data/webaudio.m4v">
+                        <div style="margin-bottom: 300px;">
+                            <h2 style="background-color: #212121; width: 600px;">Web Audio</h2>
+                            <div style="background-color: #212121; width: 500px;">@felixturner</div>
+                        </div>
+                        <aside class="notes">
+                            <p>This is something I am currently looking into, so I’ll show you a mix of my most favourite projects that I am drawing inspiration from</p>
+                            <p>To start this is a really cool visualisation of the data you get access to via the analyser node</p>
+                            <p>Created by @felixturner who has actually created lots of my favourite projects</p>
+
+                            <p>Waveform - the jagged white line, it's the shape of the sound wave as it flies through the air and hits your ear.</p>
+                            <p>Levels - the bar chart of frequency amplitudes, from bass on the left to treble on the right.</p>
+                            <p>Volume - the thicker bar on the right hand side</p>
+                            <p>Beat Detection - the volume bar flashes white when a beat is detected. The white line above the volume bar indicates the beat threshold.</p>
+
+                            <p>The potential from that data to create sweet visuals is crazy</p>
+                        </aside>
+                    </section>
+                    <section data-background="./Data/word.png" class="underdog">
+                        <h1 style="background-color: #212121; margin-bottom: 500px; width: 400px;">Web GL</h1>
+                        <aside class="notes">
+                            <p>One way is via hardware like I did with boogie bot</p>
+                            <p>Another way is through the use of Web GL.</p>
+                            <p>Which is a technology for creating 3D graphics on the web. If you have done any C++ programming and heard of Open GL it's the same kind of thing.</p>
+                            <p>This is another one of felix’s projects using web gl and web audio called word problems</p>
+                            <p>It absolutely amazes me that this is all done via javascript, how exciting is that?!
+                            <p>DEMO ( http://www.airtightinteractive.com/demos/js/uberviz/wordproblems/ )</p>
+                        </aside>
+                    </section>
+                    <section data-background="./Data/soundviz.png" class="underdog">
+                        <div style="margin-bottom: 300px;">
+                            <h1 style="background-color: #212121; width: 600px;">SOUNDVIZ</h1>
+                            <div style="background-color: #212121; width: 500px;">@bartekd</div>
+                        </div>
+                        <aside class="notes">
+                            <p>DEMO ( http://all.toolprototype.com/soundviz/ )</p>
+                            <p>So this is a project created by barkek d for a party</p>
+                            <p>They were projected on a wall and guests could interact with them using a Leap Motion device while not even putting down their drink</p>
+                            <p>All the code for it is open source which is aaahmazing</p>
+                        </aside>
+                    </section>
+                    <section data-background-video="./Data/getmosh.m4v">
+                        <aside class="notes">
+                            <p>DEMO (http://getmosh.io)</p>
+                            <p>This is another favourite of mine that I recently found, also using WebGL</p>
+                            <p>There’s quite a bit of cool stuff out there but this is actually another one by felix</p>
+                        </aside>
+                    </section>
+                </section>
+
+                <!-- Canvas 2D Graphics & Beerbot -->
+                <section>
+                    <section data-background="./Data/sketch.png">
+                        <div style="background-color: #212121; margin-bottom: 200px; margin-right: 300px; width: 600px; font-size: 100px;">@soulwire</div>
+                        <aside class="notes">
+                            <p>From the 3D stuff with Web GL, I also re-discovered all the rad stuff you can do with canvas</p>
+                            <p>This library sketch.js is really cool created by Justin or @soulwire on twitter</p>
+                            <p>He has created a bunch of sweet sweet animations</p>
+                            <p>The one named particles became very useful to me recently</p>
+                        </aside>
+                    </section>
+                    <section data-background="./Data/beerbot1.png">
+                        <div style="background-color: #212121; font-size: 100px; width: 600px; margin-top: 500px; margin-left: 400px;">@popmaker</h2>
+                        <aside class="notes">
+                            <p>At Vend, we have a keg and a common problem with the keg is we don’t really track when it’s finished, which has left a couple of Fridays pretty dry. And as web developers this is unacceptable</p>
+                            <p>So a few of us got together to hack on beerbot.</p>
+                            <p>A flowmeter is attached to the keg, and via an API you can receive data about how much is left, what beer is in there currently, what’s coming next, the temperature of the beer</p>
+                            <p>All very important facts!</p>
+                            <p>The designs are by our very own VendHQ popmaker Jacky Lee</p>
+                            <p>Him, Lance, Raf and Jamie have done most of the handwork and my contribution was</p>
+                        </aside>
+                    </section>
+                    <section data-background-video="./Data/beerbot.m4v">
+                        <aside class="notes">
+                            <p>BUBBLES!!!</p>
+                            <p>DEMO ( http://beerbot.sys.vendhq.com )</p>
+                            <p>It’s all live and my bubble module is up on my GitHub account if you want to check it out. Definitely inspired by @soulwire’s particles as well as another bubble canvas example I found on codepen.</p>
+                            <p>Another cool code sharing tool that will be in the resources at the end.</p>
+                            <p>I am still working on making the bubble physics a bit more accurate</p>
+                            <p>And I’m thinking of extending into water bubbles and sounds and things haha</p>
+                            <br>
+                            <p>To beerbot we are also going to add things like slopping the liquid around when you’re on an IPad and tilting it, things like that</p>
+
+                            <p>What is more fun than bubbles!</p>
+                            <p>That’s all that I have in progress right now, pretty excited to keep tinkering with the audio visual stuff for sure</p>
+                        </aside>
+                    </section>
+                </section>
+
+                <!-- Space example -->
+                <section data-background="./Data/space.png">
+                    <div style="background-color: #212121; font-size: 100px; margin-bottom: 500px; width: 700px;">@misterjworth</div>
+                    <aside class="notes">
+                        <p>Saw this cool project just the other day. Space to scale using pixels.</p>
+                        <p>One, it's awesome. And two, the story behind why Josh made it is rad.</p>
+                        <p>He was struggling to answer his 5 year old daughters questions about space and how far things are.</p>
+                        <p>Metaphors about golf balls and elephants wasn't really cutting it</p>
+                        <p>So he thought to use the canvas of the web, pixels!</p>
+                        <p>Totally great! And now an awesome resource for all of us too</p>
+                        <p>As one last example of something useful, cool and made with JavaScript!....</p>
+                    </aside>
+                </section>
+
+                <!-- Our slides. Boom -->
+                <section>
+                    <section data-background="./Data/ftfojs_2.gif">
+                        <img src="./Data/slideswow2.png">
+                        <aside class="notes">
+                            <p>Our slides!!! Yes! Our slides are in JavaScript too!</p>
+                            <p>We've used a framework called Reveal.js and a GitHub repo for Chris &amp; I to collaborate on these slides together</p>
+                            <p>(boom slide)</p>
+                        </aside>
+                    </section>
+                    <section data-background="./Data/ftfojs_1.gif">
+                        <img src="./Data/boom.png">
+                        <aside class="notes">
+                            <p>Boom!</p>
+                            <p>Pretty sweet!</p>
+                        </aside>
+                    </section>
+                </section>
+
+                <!-- Conclusion -->
+                <section>
+                    <section data-background="./Data/melt.png" data-background-size="600px" data-background-repeat="repeat">
+                        <h2 style="background-color: #212121;">Just the beginning...</h2>
+                        <aside class="notes">
+                            <p>Now all of this is simply a taste of what's out there when it comes to JavaScript &amp; Web Development</p>
+                            <p>It's a really exciting space to be in &amp; community to be a part of right now</p>
+                            <p>There's so much exciting stuff out there going on! Way more than I've had time to mention today</p>
+                            <p>But I do hope this glimpse has peaked your interest. So let us know if you go away and try something out!</p>
+                        </aside>
+                    </section>
+                    <section data-background="./Data/pink.png" data-background-size="600px" data-background-repeat="repeat">
+                        <h2 style="background-color: #212121;">The importance of sharing...</h2>
+                        <aside class="notes">
+                            <p>I briefly touched on what the meaning of open source is</p>
+                            <p>And I mentioned you should create and share your projects to build up a portfolio of things to show off for future employers and what not. I just wanted to emphasise it again here.</p>
+                            <p>In the industry, code is important &amp; a large part of it. There's also SO much more.</p>
+                            <p>Sharing and keeping up to date with what's going on in the community is a really important part of our job</p>
+                        </aside>
+                    </section>
+                    <section data-background="./Data/ftfojs_1.gif">
+                        <img src="./Data/js.png">
+                        <aside class="notes">
+                            <p>So I hope from today you have gathered some insight into JavaScript and into the community of the web.</p>
+                        </aside>
+                    </section>
+                    <section data-background="./Data/ftfojs_1.gif">
+                        <img src="./images/js.png">
+                        <aside class="notes">
+                        We are makers. We are coders.
+                        JavaScript is the new punk rock
+                        </aside>
+                    </section>
+                    <section class="underdog">
+                        <h1>JavaScript</h1>
+                        <h2>An underdog story.</h2>
+                        <aside class="notes">
+                            <p>Thank you for listening to our underdog story</p>
+                        </aside>
+                    </section>
+                </section>
+
+                <!-- Resources -->
+                <section data-background="./Data/melt.png" data-background-size="600px" data-background-repeat="repeat">
+                    <h2 style="background-color: #212121;">Links and Resources</h2>
+                </section>
+
+                <!-- Vend - where? -->
+                <section>
+                    <section>
+                        <h1>END OF PRESSO: @todo: clean up these Vend slides as extra addition</h1>
+                        <h2>@vendhq</h2>
+                        <aside class="notes">
+                            <p>I started at Vend when we were quite small, just starting out</p>
+                            <p>I've been part of our growth from 20 people chatting in a room just under 3 years ago, to a company that is now 6 offices around the world totaling about 250 people...</p>
+                            <p>Within our Product &amp; Engineering team (which is where I am) that growth has been from about 11 when I started to about 70 now. Most of us are here in Auckland, and 5 are in our new Wellington office</p>
+                            <p>Almost 3 years of crazy awesomeness as well as crazy hard work.</p>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>@vendhq</h2>
+                        <aside class="notes">
+                            <p>At Vend we build software for retailers.</p>
+                            <p>We use pretty neat tech and paired with our culture, people, team stuff and everything that goes on - it is a pretty exciting place to be everyday</p>
+                            <p>We've got heaps of new things coming out this year actually that I'm super stoked about showing off</p>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>Web Register</h2>
+                        <aside class="notes">
+                            <p>This is one of the products I help build:</p>
+                            <p>- Our point of sale</p>
+                            <p>This version is in beta at the moment which is exciting  If any of you have worked in retail you are probably familiar with POS !</p>
+                            <p>As customers when you go into a store, pick an item, have it scanned, discounted, and what not &amp; then you pay for it, that's what you're dealing with</p>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>E-commerce</h2>
+                        <aside class="notes">
+                            <p>? Chris ?</p>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>More</h2>
+                        <aside class="notes">
+                            <p>We also build: iOS apps</p>
+                            <p>This is another POS</p>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>More</h2>
+                        <aside class="notes">
+                            <p>Reporting systems, Spaces for retailers to setup and manage their store &amp; take Inventory</p>
+                            <p>As well as all the:</p>
+                            <ul>
+                                <li>Internal admin portals</li>
+                                <li>Dashboards</li>
+                                <li>and so on</li>
+                            </ul>
+                            <p>There's LOTS going on</p>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>Team gif</h2>
+                        <aside class="notes">
+                            <p>This is a typical team building one of those products.</p>
+                            <p>Product people including Designers; and Engineers specialising in Front end tech, quality assurance, back end tech or infrastructure</p>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>Tech slide</h2>
+                        <aside class="notes">
+                            <p>This is some of the tech we use in those teams to create those products, (I'm focusing mostly on front end side because that's my space):</p>
+                            <p>IndexedDB, AppCache Manifest</p>
+                            <p>npm, bower, gulp, protractor, selenium, mocha</p>
+                            <p>Angular.js, SMACSS,</p>
+                            <p>Automation; Continuous Integration; Micro-services; the list goes on</p>
+                            <p>As I mentioned we've been building lots of amazing stuff this year and if you want to find out more Chris &amp; I are available for questions during pizza, and we are also all on Twitter</p>
+                        </aside>
+                    </section>
+                </section>
+
+                <section data-background="./images/vend-fam.jpg">
+                        <h2>2011</h2>
+                        <img src="./images/vend-fam-christmas1.jpg">
+                        <p>8 people</p>
+                    </section>
+
+                    <section>
+                        <h2>2012</h2>
+                        <img src="./images/vend-fam-christmas2.jpg">
+                        <p>31 people</p>
+                    </section>
+
+                    <section>
+                        <h2>2013</h2>
+                        <img src="./images/vend-fam-christmas3.jpg">
+                        <p>~170 people world wide</p>
+                    </section>
+
             </div>
         </div>
 
@@ -715,6 +1362,9 @@ arr.length; // 101
             // Full list of configuration options available at:
             // https://github.com/hakimel/reveal.js#configuration
             Reveal.initialize({
+                // Should we fit it to a certain size?
+                //width:
+                //height:
                 controls: true,
                 progress: true,
                 history: true,
