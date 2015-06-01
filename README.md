@@ -20,7 +20,7 @@ To launch the presentation.
 
 ### Note: Fonts
 
-Currently, to get the correct fonts going for the presentation, you must install the fonts in `lib/fonts` directly onto your computer.
+Currently, to get the correct fonts going for the presentation, you must install the fonts in [`lib/font`](https://github.com/chrisgreeff/summer-of-tech-js-2015/tree/master/lib/font) directly onto your computer.
 
 On Mac OSX, drag and drop the font files into FontBook.
 
