@@ -18,6 +18,18 @@ $ grunt serve
 ```
 To launch the presentation.
 
+### Note: Fonts
+
+Currently, to get the correct fonts going for the presentation, you must install the fonts in `lib/fonts` directly onto your computer.
+
+On Mac OSX, drag and drop the font files into FontBook.
+
+The fonts you need are:
+- Space Punk
+- Punk Kid
+
+(this is temporary until we fix the font file imports)
+
 ## Tech and Tools
 
 - [NodeJS](https://nodejs.org/): Server-side JavaScript Platform
