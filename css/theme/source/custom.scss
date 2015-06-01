@@ -12,10 +12,8 @@
 
 
 // Include theme-specific fonts
-//@import url(../../lib/font/amsterdam-graffiti/amsterdam-graffiti.css);
-//@import url(../../lib/font/thin-mint/Jeff Levine - Thin Mint JNL.css);
 @import url(../../lib/font/punk-kid/punk kid.css);
-
+@import url(../../lib/font/space-punk/space punk.css);
 
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #212121;
@@ -26,6 +24,7 @@ $headingColor: #e6e6e6;
 $mainFontSize: 45px;
 $mainFont: 'Courier new';
 $headingFont: 'Space Punk';
+$headingFont2: 'Punk Kid';
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
@@ -51,7 +50,7 @@ section.has-light-background {
 
 .underdog h1,
 .underdog h2 {
-    font-family: 'Punk Kid';
+    font-family: $headingFont2;
 }
 
 .reveal img.vend-logo {
